@@ -1,0 +1,47 @@
+h1 {
+  font-size: 22px;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 1em 0;
+}
+
+ul {
+  margin: 1em 0;
+}
+
+p {
+  margin: 1em 0;
+}
+
+label {
+  font-weight: bold;
+}
+
+#header {
+  margin: 1em;
+}
+
+#menu ul {
+  margin: 1em;
+}
+
+#menu ul li {
+  display: inline;
+  margin: 0 0.5em;
+}
+
+#main {
+  margin: 1em;
+}
+
+#main ul {
+  margin: 1em 1.5em;
+  list-style: square;
+}
+
+#footer {
+  margin: 1em;
+  text-align: center;
+}
