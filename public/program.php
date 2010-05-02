@@ -20,13 +20,13 @@
     <div id="wrapper">
       <div id="main">
         <h2>プログラム</h2>
-        </p><img src="/images/event_description.jpg" width="50%" height="50%" /></p>
+        </p><img src="/images/event_description.jpg" width="410px" height="285px" /></p>
         <h3>タイムスケジュール</h3>
         <p>近日公開</p>
         <h3>講演</h3>
         <p>「強くしなやかなハートを育むコミュニケーション」山崎　洋実氏</p>
         <h3>ワークショップのご案内</h3>
-        </p><img src="/images/workshop.jpg" width="50%" height="50%" /></p>
+        </p><img src="/images/workshop.jpg" width="410px" height="310px" /></p>
         <p>同伴のお子様は2名まで無料でワークショップにご参加いただけます。（年齢制限・定員あり）</p>
         <strong>午前の部・小学生以上対象</strong>
         <p>キッズ・ワークショップ：体をつかってみんなで遊ぼう！</p>
@@ -56,7 +56,7 @@
         <p>HP「ファイン・コーチング」http://www.fine-coaching.com/</p>
         <p>Blog「ハッピースパイラル☆コーチング」http://plaza.rakuten.co.jp/hmproject/</p>
         <h3>楽しみ方</h3>
-        </p><img src="/images/fun.jpg" width="50%" height="50%" /></p>
+        </p><img src="/images/fun.jpg" width="410px" height="440px" /></p>
         <p>大人の方は一枚ずつチケットをお買い求めください。同伴のお子様は無料でワークショップへ参加できます（年齢制限および定員あり）（保育は別料金となります）</p>
         <p>ママだけで…</p>
         <p>午前中は講演でしっかりインプット、午後は同じテーマをワールドカフェや強み発見ワークで深めよう！</p>

@@ -20,7 +20,7 @@
     <div id="wrapper">
       <div id="main">
         <h2>お申し込み</h2>
-        </p><img src="/images/subscription" width="50%" height="50%" /></p>
+        </p><img src="/images/subscription" width="410px" height="306px" /></p>
         <form action="confirm.php">
           <p>
             <label>氏名</label><br />

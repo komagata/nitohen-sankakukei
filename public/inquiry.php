@@ -20,7 +20,7 @@
     <div id="wrapper">
       <div id="main">
         <h2>お問い合わせ</h2>
-        <p><img src="/images/inquiry.jpg" width="50%" height="50%" /></p>
+        <p><img src="/images/inquiry.jpg" width="410px" height="322px" /></p>
         <form action="confirm.php">
           <p>
             <label>メールアドレス</label><br />
