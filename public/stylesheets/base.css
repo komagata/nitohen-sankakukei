@@ -1,12 +1,24 @@
+body {
+  background: #eee;
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
+  float: left;
   font-size: 22px;
+  margin: 0.8em;
 }
 
 h2 {
   font-size: 18px;
-  margin: 1em 0;
+  padding: 1em 0;
 }
 
+h3 {
+  font-size: 18px;
+  padding: 1em 0;
+}
 ul {
   margin: 1em 0;
 }
@@ -20,7 +32,15 @@ label {
 }
 
 #header {
-  margin: 1em;
+  width: 800px;
+  height: 180px;
+  background: #fff;
+  margin: 0 auto;
+}
+
+#menu {
+  float: right;
+  background: #fff;
 }
 
 #menu ul {
@@ -32,8 +52,14 @@ label {
   margin: 0 0.5em;
 }
 
+#wrapper {
+  width: 800px;
+  margin: 0 auto;
+  background: #fff;
+}
+
 #main {
-  margin: 1em;
+  margin: 0 1em;
 }
 
 #main ul {
@@ -42,6 +68,9 @@ label {
 }
 
 #footer {
-  margin: 1em;
+  width: 800px;
+  margin: auto;
+  padding: 0 0 1em 0;
   text-align: center;
+  background: #fff;
 }
