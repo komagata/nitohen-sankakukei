@@ -20,7 +20,7 @@
     <div id="wrapper">
       <div id="main">
         <h2>プログラム</h2>
-        </p><img src="/images/event_description.jpg" width="50%" height="50%" /></p>
+        </p><img src="/images/event_description.jpg" /></p>
         <h3>タイムスケジュール</h3>
         <p>近日公開</p>
         <h3>講演</h3>
