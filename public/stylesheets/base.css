@@ -180,6 +180,8 @@ label {
 #main .profile .text ul {
 	font-size: 13px;
 	margin-top: 25px;
+	padding-left: 20px;
+	margin-left: 5px;
 }
 #main .section h3 {
 	line-height: 1.3;
