@@ -12,11 +12,11 @@
   </head>
   <body>
     <div id="header">
-      <h1><a href="/">コミュニケーション・ベース</a></h1>
-<? include 'menu.php' ?>
       <div class="eye_catch">
+        <h1><a href="/">コミュニケーション・ベース</a></h1>
       </div>
     </div>
+<? include 'menu.php' ?>
     <div id="wrapper">
       <div id="main">
         <h2>お問い合わせ</h2>
@@ -28,7 +28,7 @@
           </p>
           <p>
             <label>お問い合わせ内容</label><br />
-            <textarea name="body" cols="80" rows="12"></textarea>
+            <textarea name="body" cols="60" rows="10"></textarea>
           </p>
           <p><input type="submit" value="送信" /></p>
         </form>

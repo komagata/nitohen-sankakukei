@@ -5,21 +5,21 @@
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
     <meta http-equiv="Content-Style-Type" content="text/css" />
     <meta http-equiv="Content-Script-Type" content="text/javascript" />
-    <title>お申し込み | コミュニケーション・ベース</title>
+    <title>受講申し込み | コミュニケーション・ベース</title>
     <link rel="stylesheet" href="stylesheets/reset.css" type="text/css" />
     <link rel="stylesheet" href="stylesheets/base.css" type="text/css" />
     <script type="text/javascript" src="js/script.js"></script>
   </head>
   <body>
     <div id="header">
-      <h1><a href="/">コミュニケーション・ベース</a></h1>
-<? include 'menu.php' ?>
       <div class="eye_catch">
+        <h1><a href="/">コミュニケーション・ベース</a></h1>
       </div>
     </div>
+<? include 'menu.php' ?>
     <div id="wrapper">
       <div id="main">
-        <h2>お申し込み</h2>
+        <h2>受講申し込み</h2>
         </p><img src="/images/subscription" width="410px" height="306px" /></p>
         <form action="confirm.php">
           <p>
@@ -43,9 +43,12 @@
           </p>
           <p><input type="submit" value="送信" /></p>
         </form>
-        <h2>託児予約</h2>
-        <form action="confirm.php">
-        </form>
+        <div class="section">
+          <h2>託児予約</h2>
+          <p>６月１日予約開始</p>
+          <form action="confirm.php">
+          </form>
+        </div>
       </div>
       <div id="sub">
       </div>

@@ -7,9 +7,8 @@ body {
 }
 
 h1 {
-  float: left;
   font-size: 22px;
-  margin: 0.8em;
+  margin: 0.3em;
 }
 
 h2 {
@@ -31,6 +30,11 @@ p {
   margin: 1em 0;
 }
 
+em,
+strong {
+  font-weight: bold;
+}
+
 label {
   font-weight: bold;
 }
@@ -46,20 +50,26 @@ label {
 	border-right-color: #C0C0C0;
 	border-left-color: #C0C0C0;
 }
-
 #menu {
-	float: right;
+    margin: 0 auto;
+    padding: 1em 0;
 	background: #fff;
-	width: 340px;
+	width: 860px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #C0C0C0;
+	border-left-color: #C0C0C0;
 }
 
 #menu ul {
-  margin: 1em;
+  margin: 0 1em;
 }
 
 #menu ul li {
   display: inline;
-  margin: 0 0.5em;
+  margin: 0 1em;
 }
 
 #wrapper {
@@ -113,8 +123,16 @@ label {
 	padding-left: 0;
 }
 #header .eye_catch {
+    height: 220px;
 	clear: both;
-	height: 270px;
+	background-color: #00CCCC;
+	padding-top: 10px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+#index #header .eye_catch {
+    height: 300px;
+	clear: both;
 	background-color: #00CCCC;
 	padding-top: 10px;
 	padding-right: 15px;

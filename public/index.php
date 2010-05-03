@@ -10,11 +10,10 @@
     <link rel="stylesheet" href="stylesheets/base.css" type="text/css" />
     <script type="text/javascript" src="js/script.js"></script>
   </head>
-  <body>
+  <body id="index">
     <div id="header">
-      <h1><a href="/">コミュニケーション・ベース</a></h1>
-<? include 'menu.php' ?>
       <div class="eye_catch">
+        <h1><a href="/">コミュニケーション・ベース</a></h1>
         <div class="section information">
           <h3>お知らせ</h3>
           <div class="data">
@@ -37,6 +36,7 @@
         </div>
       </div>
     </div>
+<? include 'menu.php' ?>
     <div id="wrapper">
       <div id="main">
         <h2>家族の未来を応援します！</h2>
@@ -58,16 +58,6 @@
               <dt>内容</dt>
               <dd>ワンチケットで講演会+ワークショップが自由に楽しめます（ワークショップは事前登録必要）</dd>
             </dl>
-          </div>
-        </div>
-        <div class="section about">
-          <h3>コミュニケーション・ベースとは</h3>
-          <div class="text">
-            <p>変化の激しい時代に生きる子供たち。</p>
-            <p>そんな時代を生き抜いていく上で必要なものは、高いアンテナをはりめぐらす好奇心と、新しいものごとに挑戦していくチャレンジ精神です。</p>
-            <p>そんな強いハートを持つ子を育む、そして、好奇心と挑戦のベースとなるもの・・それが、自分自身に対する信頼感なのです。</p>
-            <p>子供たちをはぐくむ大人から始めましょう！</p>
-            <p>子供たちの生き生きとした未来を願うパパママとその子供たちのコミュニケーション・ベース（基地）に、そのヒントがあります。</p>
           </div>
         </div>
       </div>
