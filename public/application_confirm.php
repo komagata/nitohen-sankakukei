@@ -1,15 +1,6 @@
 <?php
 require_once '../init.php';
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    validate_presence_of('family_workshop');
-    validate_presence_of('adult_workshop');
-    validate_numericality_of('child_num', array('less_than_or_equal_to' => 2));
-    validate_presence_of('name');
-    validate_presence_of('name_kana');
-    validate_presence_of('email');
-    validate_email_of('email');
-}
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -34,8 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <div id="main">
         <h2>受講申し込み</h2>
         </p><img src="/images/subscription" width="410px" height="306px" /></p>
-        <?= error_messages() ?>
-        <form action="application.php" method="post">
+        <form action="confirm.php">
           <p>
             <label>ご希望の親子ワークショップ</label><br />
             <?= family_workshop_select_field() ?>
@@ -45,15 +35,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <?= adult_workshop_select_field() ?>
           </p>
           <p>
-            <label>ワークショップにご参加のお子さんの人数</label><br />
+            <label>ワークショップにご参加のお子さん</label><br />
             <?= text_field('child_num', array('size' => '2')) ?> 人
           </p>
           <p>
-            <label>お名前</label><br />
+            <label>氏名</label><br />
             <?= text_field('name') ?>
           </p>
           <p>
-            <label>お名前（カナ）</label><br />
+            <label>氏名（カナ）</label><br />
             <?= text_field('name_kana') ?>
           </p>
           <p>
