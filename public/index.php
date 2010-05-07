@@ -15,6 +15,7 @@
       <h1><a href="/">コミュニケーション・ベース</a></h1>
 <? include 'menu.php' ?>
       <div class="eye_catch">
+        <h2>家族の未来を応援します！</h2>
         <div class="section information">
           <h3>お知らせ</h3>
           <div class="data">
@@ -31,15 +32,14 @@
             </ul>
           </div>
         </div>
+      </div>
         <div class="attention">
           <p>このイベントの売り上げの一部は○○に寄付を予定しています。</p>
-          <p>協賛リンク</p>
+          <p><strong>協賛リンク</strong>&nbsp;…&nbsp;あああああああああああ</p>
         </div>
-      </div>
     </div>
     <div id="wrapper">
       <div id="main">
-        <h2>家族の未来を応援します！</h2>
         <div class="section profile">
           <h3>ハートの強い子をはぐくむためのコミュニケーション・ベース</h3>
           <div class="text">
