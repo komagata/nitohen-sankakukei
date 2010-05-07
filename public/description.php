@@ -20,7 +20,7 @@
       </div>
 <div class="bread_crambs">
 <ol>
-<li><a href="">トップページ</a></li>
+<li><a href="/">トップページ</a></li>
 <li>イベント詳細</li>
 </ol>
 </div>

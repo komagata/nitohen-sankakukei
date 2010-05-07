@@ -52,10 +52,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </p>（図）</p>
         <p>
           ※ネットプリントサービス：コンビニの店頭のコピー機からパソコンのファイルのプリントアウトができるサービス。
-          いずれも、白黒２０円／枚、カラー８０円／枚<br />
-          セブンイレブン：http://www.printing.ne.jp/index.html<br />
-          ローソン：http://www.lawson.co.jp/service/counter/copy.html
-        </p>
+          いずれも、白黒２０円／枚、カラー８０円／枚</p>
+<ul>
+          <li>セブンイレブン：<a href="http://www.printing.ne.jp/index.html" target="_blank">http://www.printing.ne.jp/index.html</a></li>
+          <li>ローソン：<a href="http://www.lawson.co.jp/service/counter/copy.html" target="_blank">http://www.lawson.co.jp/service/counter/copy.html</a></li>
+</ul>
         </p>※USBメモリやSDカード等のメディアが必要です。</p>
 </div>
         <div class="section">
