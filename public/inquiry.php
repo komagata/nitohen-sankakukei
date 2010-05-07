@@ -21,11 +21,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   </head>
   <body>
     <div id="header">
+      <h1><a href="/">コミュニケーション・ベース</a></h1>
+<? include 'menu.php' ?>
       <div class="eye_catch">
-        <h1><a href="/">コミュニケーション・ベース</a></h1>
       </div>
     </div>
-<? include 'menu.php' ?>
     <div id="wrapper">
       <div id="main">
         <h2>お問い合わせ</h2>

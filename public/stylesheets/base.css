@@ -2,13 +2,15 @@ html {
 	background-image: url(../images/html.png);
 }
 body {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
+  float: left;
+  background: url(../images/logo.gif);
   font-size: 22px;
-  margin: 0.3em;
+  margin: 1em;
 }
 
 h2 {
@@ -51,16 +53,11 @@ label {
 	border-left-color: #C0C0C0;
 }
 #menu {
+    float: right;
     margin: 0 auto;
     padding: 1em 0;
 	background: #fff;
-	width: 860px;
-	border-right-width: 1px;
-	border-left-width: 1px;
-	border-right-style: solid;
-	border-left-style: solid;
-	border-right-color: #C0C0C0;
-	border-left-color: #C0C0C0;
+	width: 400px;
 }
 
 #menu ul {
@@ -69,7 +66,7 @@ label {
 
 #menu ul li {
   display: inline;
-  margin: 0 1em;
+  margin: 0 0.7em;
 }
 
 #wrapper {
@@ -123,21 +120,15 @@ label {
 	padding-left: 0;
 }
 #header .eye_catch {
-    height: 220px;
+    height: 280px;
 	clear: both;
+    background: url(../images/family.jpg);
 	background-color: #00CCCC;
 	padding-top: 10px;
 	padding-right: 15px;
 	padding-left: 15px;
 }
-#index #header .eye_catch {
-    height: 300px;
-	clear: both;
-	background-color: #00CCCC;
-	padding-top: 10px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
+
 #main .profile .text {
 	float: left;
 	width: 450px;
