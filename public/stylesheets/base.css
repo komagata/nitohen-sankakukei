@@ -55,13 +55,13 @@
 		margin: 0 auto;
 	}
 	#menu {
-		float: right;
-		margin: 0;
-		width: 435px;
-		height: 25px;
-		padding-top: 25px;
-		padding-right: 0;
-		padding-left: 0;
+	float: right;
+	margin: 0;
+	width: 435px;
+	height: 25px;
+	padding-top: 25px;
+	padding-right: 0;
+	padding-left: 0;
 	}
 	
 	#menu ul {
@@ -309,13 +309,13 @@
 		background-image: url(../images/menu_a.gif);
 	}
 	#menu .top a {
-		width: 58px;
+	width: 55px;
 	}
 	#menu .about a {
-		width: 115px;
+	width: 103px;
 	}
 	#menu .subscription a {
-		width: 80px;
+	width: 88px;
 	}
 	#menu .inquiry a {
 		width: 95px;
