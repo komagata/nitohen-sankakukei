@@ -34,6 +34,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <div id="main">
         <h2>お申し込み</h2>
         </p><img src="/images/subscription" width="410px" height="306px" /></p>
+        <p>コミュニケーションベースへの参加は以下のような流れになります。</p>
+        <p>
+          コミュニケーションベースにご参加いただくためには、受講パスポートをお申し込みください。
+          パスポート一枚で、講演会（午前）とワークショップ（午後・選択制）の両方にご参加いただけます。
+          パスポートをお持ちの大人お一人につき、お子さん二人までワークショップにご参加いただけます。（ワークショップにより年齢制限あり）
+          託児サービスのご利用は事前に予約が必要です。
+        </p>
+        </p>（図）</p>
+        <p>
+          ※ネットプリントサービス：コンビニの店頭のコピー機からパソコンのファイルのプリントアウトができるサービス。
+          いずれも、白黒２０円／枚、カラー８０円／枚<br />
+          セブンイレブン：http://www.printing.ne.jp/index.html<br />
+          ローソン：http://www.lawson.co.jp/service/counter/copy.html
+        </p>
+        </p>※USBメモリやSDカード等のメディアが必要です。</p>
         <?= error_messages() ?>
         <form action="application.php" method="post">
           <p>
