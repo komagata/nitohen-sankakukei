@@ -24,15 +24,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <h1><a href="/">コミュニケーション・ベース</a></h1>
 <? include 'menu.php' ?>
       <div class="eye_catch">
+        <h2>お問い合わせ</h2>
       </div>
+<div class="bread_crambs">
+<ol>
+<li><a href="/">トップページ</a></li>
+<li>お問い合わせ</li>
+</ol>
+</div>
     </div>
     <div id="wrapper">
       <div id="main">
-        <h2>お問い合わせ</h2>
-        <p><img src="/images/inquiry.jpg" width="410px" height="322px" /></p>
         <?= error_messages() ?>
         <form action="inquiry.php" method="post">
-          <p>
+<div class="section">
+         <h3>お問い合わせフォーム</h3>
+        <p class="float_right"><img src="/images/inquiry.jpg" width="200px" height="210px" /></p>
+         <p>
             <label>メールアドレス</label><br />
             <?= text_field('email') ?>
           </p>
@@ -43,7 +51,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <p><input type="submit" value="送信" /></p>
         </form>
       </div>
-      <div id="sub">
       </div>
     </div>
 <? include 'footer.php' ?>

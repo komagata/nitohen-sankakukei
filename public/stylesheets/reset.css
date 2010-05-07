@@ -64,13 +64,13 @@ display: inline-table;
    
  /* --BODY-- */  
  body {
-    margin:0;
-    overflow:visible;
-    padding:0;
-    line-height: 1.5;
-    font-family: 'メイリオ', "Lucida Sans Unicode", "Lucida Grande", Arial, Helvetica, "ヒラギノ丸ゴ Pro W4", HiraMaruPro-W4, Verdana, HiraMaruPro-W4, "ヒラギノ角ゴ Pro W3", HiraKakuPro-W3, Osaka, sans-serif;
-    font-size: 14px;
-    color: #5a5a5a;
+	margin:0;
+	overflow:visible;
+	padding:0;
+	line-height: 1.5;
+	font-family: 'メイリオ', "Lucida Sans Unicode", "Lucida Grande", Arial, Helvetica, "ヒラギノ丸ゴ Pro W4", HiraMaruPro-W4, Verdana, HiraMaruPro-W4, "ヒラギノ角ゴ Pro W3", HiraKakuPro-W3, Osaka, sans-serif;
+	font-size: 15px;
+	color: #5b646b;
  }  
    
  /* for IE7 */  

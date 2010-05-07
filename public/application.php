@@ -28,14 +28,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <h1><a href="/">コミュニケーション・ベース</a></h1>
 <? include 'menu.php' ?>
       <div class="eye_catch">
+        <h2>お申し込み</h2>
       </div>
+<div class="bread_crambs">
+<ol>
+<li><a href="/">トップページ</a></li>
+<li>お申し込み</li>
+</ol>
+</div>
     </div>
     <div id="wrapper">
       <div id="main">
-        <h2>お申し込み</h2>
-        </p><img src="/images/subscription" width="410px" height="306px" /></p>
         <?= error_messages() ?>
+        <div class="section">
+        <h3>お申し込みフォーム</h3>
         <form action="application.php" method="post">
+        <p class="float_right"><img src="/images/subscription.jpg" width="300px" height="209px" /></p>
           <p>
             <label>ご希望の親子ワークショップ</label><br />
             <?= family_workshop_select_field() ?>
@@ -62,12 +70,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           </p>
           <p><input type="submit" value="送信" /></p>
         </form>
+        </div>
         <div class="section">
-          <h2>託児予約</h2>
+          <h3>託児予約</h3>
           <p>６月１日予約開始</p>
         </div>
-      </div>
-      <div id="sub">
       </div>
     </div>
 <? include 'footer.php' ?>
