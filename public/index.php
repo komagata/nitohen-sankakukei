@@ -20,22 +20,18 @@
           <h3>お知らせ</h3>
           <div class="data">
             <ul>
-              <li>xxxxxxxxxxx</li>
-              <li>xxxxxxxxxxx</li>
-              <li>xxxxxxxxxxx</li>
-              <li>xxxxxxxxxxx</li>
-              <li>xxxxxxxxxxx</li>
-              <li>xxxxxxxxxxx</li>
-              <li>xxxxxxxxxxx</li>
-              <li>xxxxxxxxxxx</li>
-              <li>xxxxxxxxxxx</li>
+              <li>6月1日:申し込み受付け開始予定</li>
+              <li>5月8日:サイトオープン！</li>
             </ul>
           </div>
         </div>
       </div>
         <div class="attention">
+          <p>６月１日から受講申し込み開始予定です。</p>
+<!--
           <p>このイベントの売り上げの一部は○○に寄付を予定しています。</p>
           <p><strong>協賛リンク</strong>&nbsp;…&nbsp;あああああああああああ</p>
+-->
         </div>
     </div>
     <div id="wrapper">

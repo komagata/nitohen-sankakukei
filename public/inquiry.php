@@ -5,6 +5,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     validate_presence_of('email');
     validate_email_of('email');
     validate_presence_of('body');
+
+    if (!(count($_ERROR) > 0)) {
+        $body = fetch('inquiry.txt.php');
+        nice_send_mail(MAIL_TO, MAIL_FROM, $body);
+        $_NOTICE = 'お問い合わせを承りました。';
+    }
 }
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -35,7 +41,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
     <div id="wrapper">
       <div id="main">
-        <?= error_messages() ?>
+        <?= notice_message() ?> 
+        <?= error_messages() ?> 
         <form action="inquiry.php" method="post">
 <div class="section">
          <h3>お問い合わせフォーム</h3>
@@ -46,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           </p>
           <p>
             <label>お問い合わせ内容</label><br />
-            <?= text_area('body', array('cols' => 60, 'rows' => 10)) ?>
+            <?= text_area('body', array('cols' => 50, 'rows' => 10)) ?>
           </p>
           <p><input type="submit" value="送信" /></p>
         </form>

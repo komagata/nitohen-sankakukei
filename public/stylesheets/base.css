@@ -255,6 +255,15 @@
 	.clear {
 	clear: both;
 	}
+
+	.notice_message {
+	  background: #eef;
+	  padding: 10px 15px;
+	  margin: 10px 0px;
+	  border-top: solid 1px #00f;
+	  border-bottom: solid 1px #00f;
+	}
+
 	.error_messages {
 	  background: #fee;
 	  padding: 10px 15px;

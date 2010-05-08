@@ -4,9 +4,9 @@ ini_set('include_path', join(PATH_SEPARATOR, array(
     ini_get('include_path'))));
 
 define('MAIL_TO', 'komagata@gmail.com');
-define('MAIL_FROM', 'komagata@gmail.com');
+define('MAIL_FROM', 'info@nitohen-sankakukei.com');
 
-include_once 'util.php';
+require_once 'util.php';
 
 function i18n($name) {
     $_TEXT = array(

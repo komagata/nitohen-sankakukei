@@ -1,5 +1,6 @@
 <?php
 $_ERROR = array();
+$_NOTICE = '';
 
 function error_messages() {
     global $_ERROR;
@@ -12,6 +13,14 @@ function error_messages() {
     echo "    <li class=\"error\">{$error}</li>\n";
     }
     echo "  </ul>\n";
+    echo "</div>\n";
+}
+
+function notice_message() {
+    global $_NOTICE;
+    if ($_NOTICE === '') return '';
+    echo "<div class=\"notice_message\">\n";
+    echo "  <p>{$_NOTICE}</p>\n";
     echo "</div>\n";
 }
 

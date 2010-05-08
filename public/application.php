@@ -49,7 +49,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           パスポートをお持ちの大人お一人につき、お子さん二人までワークショップにご参加いただけます。（ワークショップにより年齢制限あり）
           託児サービスのご利用は事前に予約が必要です。
         </p>
+<!--
         </p>（図）</p>
+-->
         <p>
           ※ネットプリントサービス：コンビニの店頭のコピー機からパソコンのファイルのプリントアウトができるサービス。
           いずれも、白黒２０円／枚、カラー８０円／枚<br />
@@ -58,6 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </p>
         </p>※USBメモリやSDカード等のメディアが必要です。</p>
 </div>
+<!--
         <div class="section">
         <h3>お申し込みフォーム</h3>
         <?= error_messages() ?>
@@ -89,6 +92,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <p><input type="submit" value="送信" /></p>
         </form>
         </div>
+-->
         <div class="section">
           <h3>託児予約</h3>
           <p>６月１日予約開始</p>
