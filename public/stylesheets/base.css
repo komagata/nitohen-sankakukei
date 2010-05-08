@@ -398,3 +398,26 @@
 #main .workshop_description strong {
 	display: block;
 }
+#main .seminor .float_left {
+	text-align: center;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	font-size: 12px;
+	padding-top: 10px;
+}
+#main .event_menu ul {
+	margin: 0px;
+	padding: 0px;
+}
+#main .event_menu li {
+	display: inline;
+}
+#main .event_menu li a {
+	margin-right: 18px;
+	padding-left: 12px;
+	background-image: url(../images/h4.gif);
+	background-position: left center;
+	background-repeat: no-repeat;
+	white-space: nowrap;
+	line-height: 2;
+}

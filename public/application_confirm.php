@@ -16,15 +16,15 @@ require_once '../init.php';
   </head>
   <body>
     <div id="header">
+      <h1><a href="/">コミュニケーション・ベース</a></h1>
+<? include 'menu.php' ?>
       <div class="eye_catch">
-        <h1><a href="/">コミュニケーション・ベース</a></h1>
+        <h2>受講申し込み</h2>
       </div>
     </div>
-<? include 'menu.php' ?>
     <div id="wrapper">
       <div id="main">
-        <h2>受講申し込み</h2>
-        </p><img src="/images/subscription" width="410px" height="306px" /></p>
+        <p><img src="/images/subscription" width="410px" height="306px" /></p>
         <form action="confirm.php">
           <p>
             <label>ご希望の親子ワークショップ</label><br />

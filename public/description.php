@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="stylesheets/reset.css" type="text/css" />
     <link rel="stylesheet" href="stylesheets/base.css" type="text/css" />
     <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="javascripts/smoothscroll.js"></script>
   </head>
   <body>
     <div id="header">
@@ -19,13 +20,25 @@
       </div>
 <div class="bread_crambs">
 <ol>
-<li><a href="">トップページ</a></li>
+<li><a href="/">トップページ</a></li>
 <li>イベント詳細</li>
 </ol>
 </div>
     </div>
     <div id="wrapper">
       <div id="main">
+        <div class="section event_menu">
+          <h3>イベント詳細</h3>
+          <ul>
+          <li><a href="#map">開催日時と場所</a></li>
+          <li><a href="#schedule">タイムスケジュール</a></li>
+          <li><a href="#lecture">講演</a></li>
+          <li><a href="#workshop">ワークショップのご案内</a></li>
+          <li><a href="#seminor">講師紹介</a></li>
+          <li><a href="#fun">楽しみ方</a></li>
+          <li><a href="#committee">実行委員紹介</a></li>
+          </ul>
+        </div>
       <div class="section" id="map">
         <h3>開催日時と場所</h3>
         <div class="data">
@@ -46,16 +59,16 @@
         </div>
         </div>
 <!--
-        <div class="section schedule">
+        <div class="section schedule" id="schedule">
           <h3>タイムスケジュール</h3>
           <p>近日公開</p>
         </div>
 -->
-        <div class="section">
+        <div class="section" id="lecture">
           <h3>講演</h3>
-          <p>「強くしなやかなハートを育むコミュニケーション」山崎　洋実氏</p>
+          <p>「強くしなやかなハートを育むコミュニケーション」<a href="#seminor">山崎 洋実氏</a></p>
         </div>
-        <div class="section workshop">
+        <div class="section workshop" id="workshop">
           <h3>ワークショップのご案内</h3>
           <p class="block">同伴のお子様は2名まで無料でワークショップにご参加いただけます。（年齢制限・定員あり）</p>
 <div class="workshop_description">
@@ -67,7 +80,7 @@
           自分でランチを作ってみよう！</p></li>
           </ul>
 </div>
-          
+
 <div class="float_left workshop_description">
           <h4>午後の部「自分で実践」</h4>
           <ul>
@@ -95,13 +108,16 @@
           </ul>
         </div>
         </div>
-        <div class="section">
-          <h3>講師紹介</h3>
-          <div class="float_right">
-          <p>講演講師：山崎洋実</p>
-         </div>
-          <h4>プロフィール</h4>
-          <p>1971年静岡生まれ。<br />
+        <div class="section seminor" id="seminor">
+          <h3>講師紹介（講演講師：山崎洋実）</h3>
+          
+          <h4>山崎洋実プロフィール</h4>
+          <div class="float_left">
+<!--
+          <p><img src="images/yamazaki.jpg" />
+-->
+          </p>
+         </div><p>1971年静岡生まれ。<br />
           <p>旅行代理店、大手英会話学校勤務時代を通して接客&amp;人材育成の楽しさを知る。結婚退職後コーチングに出会い、これまでやってきた事がコーチングだったことを知り体系的に学ぶ。</p>
           <p>その後妊娠出産、3年間の専業主婦生活を経て、身近なママ友達向けにスタートした。ママの特徴に合わせ、豊富な事例を用いて体系的に伝える講座が、ママ達の間で『目からウロコ』で『子育てが楽しくなる』 『参加しただけで元気になれる』と評判に。</p>
           <p>クチコミとリピーターで活動が広がり、瞬く間に首都圏から関東、全国へと飛び火。日本で唯一の“ママ達の元気と輝きを引き出すコーチング講師”として、多くのママから「ひろっしゅコーチ」という愛称で慕われている。</p>
@@ -111,7 +127,7 @@
           <p>HP「ファイン・コーチング」<a href="http://www.fine-coaching.com/">http://www.fine-coaching.com/</a></p>
           <p>Blog「ハッピースパイラル☆コーチング」<a href="http://plaza.rakuten.co.jp/hmproject/">http://plaza.rakuten.co.jp/hmproject/</a></p>
         </div>
-        <div class="section">
+        <div class="section" id="fun">
           <h3>楽しみ方</h3>
           <span class="float_right clear"><img src="/images/fun.jpg" width="200px" height="256px" /></span>
           <p>大人の方は一枚ずつチケットをお買い求めください。同伴のお子様は無料でワークショップへ参加できます（年齢制限および定員あり）（保育は別料金となります）</p>
@@ -126,7 +142,7 @@
           <p>（参加ワークショップは一例です。各ワークショップには定員がございます。）</p>
         </div>
 <!--
-        <div class="section">
+        <div class="section" id="committee">
           <h3>実行委員紹介</h3>
           <p>近日公開</p>
         </div>
