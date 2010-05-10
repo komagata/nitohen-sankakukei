@@ -301,13 +301,13 @@
 		padding: 0px;
 	}
 	#menu a {
-		display: block;
-		float: left;
-		padding-left: 15px;
-		background-repeat: no-repeat;
-		background-position: left center;
-		padding-right: 5px;
-		text-indent: -9999px;
+	display: block;
+	float: left;
+	padding-left: 15px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-right: 5px;
+	text-indent: -9999px;
 	}
 	#menu a:link,
 	#menu a:visited {
@@ -318,13 +318,13 @@
 		background-image: url(../images/menu_a.gif);
 	}
 	#menu .top a {
-	width: 55px;
+	width: 48px;
 	}
 	#menu .about a {
-	width: 103px;
+	width: 95px;
 	}
 	#menu .subscription a {
-	width: 88px;
+	width: 112px;
 	}
 	#menu .inquiry a {
 		width: 95px;
