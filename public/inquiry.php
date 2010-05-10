@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if (!(count($_ERROR) > 0)) {
         $body = fetch('inquiry.txt.php');
-        nice_send_mail(MAIL_TO, MAIL_FROM, $body, array('From:'.MAIL_FROM));
+        nice_send_mail(MAIL_TO, MAIL_FROM, $body, array('From: '.MAIL_FROM));
         $_NOTICE = 'お問い合わせを承りました。';
     }
 }
