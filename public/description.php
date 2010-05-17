@@ -5,10 +5,9 @@
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
     <meta http-equiv="Content-Style-Type" content="text/css" />
     <meta http-equiv="Content-Script-Type" content="text/javascript" />
-    <title>イベント詳細 | コミュニケーション・ベース</title>
+    <title>講座詳細 | コミュニケーション・ベース</title>
     <link rel="stylesheet" href="stylesheets/reset.css" type="text/css" />
     <link rel="stylesheet" href="stylesheets/base.css" type="text/css" />
-    <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="javascripts/smoothscroll.js"></script>
   </head>
   <body>
@@ -16,28 +15,28 @@
       <h1><a href="/">コミュニケーション・ベース</a></h1>
 <? include 'menu.php' ?>
       <div class="eye_catch">
-        <h2>イベント詳細</h2>
+        <h2>講座詳細</h2>
       </div>
-<div class="bread_crambs">
-<ol>
-<li><a href="/">トップページ</a></li>
-<li>イベント詳細</li>
-</ol>
-</div>
+      <div class="bread_crambs">
+        <ol>
+          <li><a href="/">トップページ</a></li>
+          <li>講座詳細詳細</li>
+        </ol>
+      </div>
     </div>
     <div id="wrapper">
       <div id="main">
         <div class="section event_menu">
-          <h3>イベント詳細</h3>
+          <h3>講座詳細</h3>
           <ul>
-          <li><a href="#map">開催日時と場所</a></li>
-          <li><a href="#schedule">タイムスケジュール</a></li>
-          <li><a href="#lecture">講演</a></li>
-          <li><a href="#workshop">ワークショップのご案内</a></li>
-          <li><a href="#seminor">講師紹介</a></li>
-          <li><a href="#fun">楽しみ方</a></li>
-          <li><a href="#whatscommittee">コミュニケーション・ベース（基地）実行委員会とは</a></li>
-          <li><a href="#committee">コミュニケーション・ベース実行委員</a></li>
+            <li><a href="#map">開催日時と場所</a></li>
+            <li><a href="#schedule">タイムスケジュール</a></li>
+            <li><a href="#lecture">講演</a></li>
+            <li><a href="#workshop">ワークショップのご案内</a></li>
+            <li><a href="#seminor">講師紹介</a></li>
+            <li><a href="#fun">楽しみ方</a></li>
+            <li><a href="#whatscommittee">コミュニケーション・ベース（基地）実行委員会とは</a></li>
+            <li><a href="#committee">コミュニケーション・ベース実行委員</a></li>
           </ul>
         </div>
       <div class="section" id="map">
@@ -144,8 +143,13 @@
           <p>コミュニケーション・ベース（基地）の実行委員会は、子育て中のママ６人からなるプロジェクトチームです。</p>
           <p>みんな、出自も思考回路もライフスタイルも得意分野も見事にばらばらな、個性豊かなメンバーぞろい。だからこそ、役割分担できてうまくいってます。</p>
           <p>そんなばらばらな６人が共通して考えていること。それは、「子供たちには自分自身の力で豊かな未来を切り開いていってほしい」ということ。</p>
-          <p>エリートになることがすべてじゃない。突出した才能は（もちろんあればうれしいけど）なくてもいい。わが子には、それぞれ自分らしいやり方で、素敵に楽しく幸せになってほしいと願っています。そのために、母たちは今日もがんばっています。</p>
-          <p>かくして、コミュニケーション・ベース（基地）実行委員会が誕生したのです・・・</p>
+          <p>エリートになることが全てじゃない。突出した才能は（もちろんあればうれしいけど）なくてもいい。わが子には、それぞれ自分らしいやり方で、素敵に楽しく幸せになってほしいと願っています。自分の力で、自分らしく未来を切り開くために基礎（base）となる力、それはコミュニケーション力ではないかと私たちは考えました。そして、そのコミュニケーションの基礎は、親子の関わりの中から学んでいくものではないか、とも。しかし、いざコミュニケーションという曖昧模糊としたものに自力で取り組むのはとても難しいもの・・・だから、</p>
+          <ul>
+            <li>親子で楽しく（これ重要！）基礎（base）を学ぶ場を作ろう！</li>
+            <li>子どもたちが飛躍するための基地（base）をつくろう！</li>
+            <li>せっかくなら、本当に身に着けてほしいから、単に話を聞いておしまいではなく、自分で手を動かし頭をひねってワークする・・・ちょっとしたベースキャンプの場にしてしまおう！</li>
+          </ul>
+          <p>かくして、「コミュニケーション・ベース」実行委員会は誕生しました・・・</p>
         </div>
         <div class="section" id="committee">
           <h3>コミュニケーション・ベース実行委員</h3>
