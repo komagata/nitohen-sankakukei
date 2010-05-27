@@ -212,7 +212,8 @@
 	}
 	#main .profile .text ul {
 		font-size: 13px;
-		margin-top: 25px;
+		margin-top: 10px;
+		margin-bottom: 0px;
 		padding-left: 20px;
 		margin-left: 5px;
 	}
@@ -420,4 +421,46 @@
 	background-repeat: no-repeat;
 	white-space: nowrap;
 	line-height: 2;
+}
+
+table.time-schedule {
+  border-collapse: separate;
+  border-spacing: 3px 3px;
+  margin: auto;
+  background-color: #fff;
+}
+
+table.time-schedule td {
+  padding: 3px 5px;
+  background-color: #EFF4F7;
+  font-size: 10px;
+  text-align: center;
+}
+
+table.kids-workshop,
+table.workshop {
+  border-collapse: separate;
+  border-spacing: 3px 3px;
+  width: 470px;
+  background-color: #fff;
+}
+
+table.time-schedule th,
+table.kids-workshop th,
+table.workshop th {
+  padding: 3px 10px;
+  font-weight: bold;
+  background-color: #EFF4F7;
+  font-size: 12px;
+}
+
+table.kids-workshop td,
+table.workshop td {
+  padding: 3px 10px;
+  background-color: #EFF4F7;
+  font-size: 12px;
+}
+
+#lecture .float_left img {
+  margin-right: 1em;
 }
