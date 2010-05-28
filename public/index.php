@@ -13,7 +13,6 @@
   <body id="index">
     <div id="header">
       <h1><a href="/">コミュニケーション・ベース</a></h1>
-<? include 'menu.php' ?>
       <div class="eye_catch">
         <h2>家族の未来を応援します！</h2>
         <div class="section information">
@@ -26,6 +25,7 @@
           </div>
         </div>
       </div>
+<? include 'menu.php' ?>
         <div class="attention">
           <p>６月１日から受講申し込み開始予定です。</p>
         </div>
@@ -35,7 +35,7 @@
         <div class="section profile">
           <h3>ハートの強い子をはぐくむためのコミュニケーション・ベース</h3>
           <div class="text">
-            <p>コミュニケーション・ベース ＝ 講演会 ＋ ワークショップ</p>
+            <h4>コミュニケーション・ベース ＝ 講演会 ＋ ワークショップ</h4>
             <p>しなやかでたくましい・メンタルタフネスな子どもを育てたいパパママへ親子で楽しくコミュニケーションを学べる1day講座。</p>
             <h4>10:00〜12:00　〜講演会〜</h4>
             <p>強くしなやかなハートを育てるコミュニケーション</p>
@@ -44,8 +44,7 @@
               <li>自分自身の持つ価値観に気づく</li>
             </ul>
             <p>講師　山﨑 洋実（プロフィールは<a href="description.php#seminor">こちら</a>）</p>
-            <p></p>
-            <p>（注意）<br />講演会には中学生以の受講生が参加いただけます</p>
+            <p class="attention">（注意）講演会には中学生以の受講生が参加いただけます</p>
             <p>小学生対象のキッズワークショップ、ならびに園児以上のお子さんと参加できる親子ワークショップもそろえておりますので、是非親子でご参加ください。</p>
             <table class="kids-workshop">
               <tr>
