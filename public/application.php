@@ -96,7 +96,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 -->
         <div class="section">
           <h3>託児予約</h3>
-          <p>６月１日予約開始</p>
+          <p>6月11日予約開始</p>
         </div>
       </div>
     </div>

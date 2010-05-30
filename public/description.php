@@ -70,7 +70,7 @@
               <th rowspan="2">14:30</th>
             </tr>
             <tr>
-              <td rowspan="3">ジュニアマッサージ</td>
+              <td rowspan="3"><img src="images/icon_parent_kids.gif" alt="親子" width="29" height="22" />ファミリーマッサージ</td>
             </tr>
             <tr>
               <th rowspan="2">15:30</th>
@@ -107,9 +107,8 @@
             <tr id="kids-workshop">
               <td>
                 <h4>
-                  <span class="open"  onclick="$('#kids-workshop .close').show();$('#kids-workshop .open').hide();$('#kids-workshop .description').show()">&nbsp;&nbsp;&nbsp;&nbsp;キッズ・ワークショップ</span>
-                  <span class="close" onclick="$('#kids-workshop .open').show();$('#kids-workshop .close').hide();$('#kids-workshop .description').hide()" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;キッズ・ワークショップ</span>
-                  
+                  <span class="open"  onclick="$('#kids-workshop .close').show();$('#kids-workshop .open').hide();$('#kids-workshop .description').slideToggle()">&nbsp;&nbsp;&nbsp;&nbsp;キッズ・ワークショップ</span>
+                  <span class="close" onclick="$('#kids-workshop .open').show();$('#kids-workshop .close').hide();$('#kids-workshop .description').slideToggle()" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;キッズ・ワークショップ</span>
                 </h4>
                 <div class="description" style="display:none">
                   <p>集まれ！キッズ 「巨大バズルを作ろう！！！」</p>
@@ -125,9 +124,8 @@
             <tr id="kids-kitchen">
               <td>
                 <h4>
-                  <span class="open"  onclick="$('#kids-kitchen .close').show();$('#kids-kitchen .open').hide();$('#kids-kitchen .description').show()">&nbsp;&nbsp;&nbsp;&nbsp;キッズ・キッチン（ランチ編）</span>
-                  <span class="close" onclick="$('#kids-kitchen .open').show();$('#kids-kitchen .close').hide();$('#kids-kitchen .description').hide()" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;キッズ・キッチン（ランチ編）</span>
-                  
+                  <span class="open"  onclick="$('#kids-kitchen .close').show();$('#kids-kitchen .open').hide();$('#kids-kitchen .description').slideToggle()">&nbsp;&nbsp;&nbsp;&nbsp;キッズ・キッチン（ランチ編）</span>
+                  <span class="close" onclick="$('#kids-kitchen .open').show();$('#kids-kitchen .close').hide();$('#kids-kitchen .description').slideToggle()" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;キッズ・キッチン（ランチ編）</span>
                 </h4>
                 <div class="description" style="display:none">
                   <p>「僕も私もチャレンジ！ワンプレートランチ」</p>
@@ -137,7 +135,7 @@
               <td>
                 <h4>高須 希代</h4>
                 <div class="description" style="display:none">
-                  <img src="images/takasu.jpg" width="40%" height="40%" />
+                  <img src="images/takasu.jpg" width="102px" height="77px" />
                   <p>管理栄養士、食生活アドバイザー。栄養士免許取得後、心療内科クリニックに併設するセラピー研究所に入社。現代栄養学・東洋医学（漢方）・自然食（マクロビオティック）の3面から食を学ぶ。その後、有料老人ホームの栄養士を経てフリーとなり、現在は日本人にあった食生活の指導を心療内科クリニックにて行う。その他、幼児向けの料理教室、社会人向け食育講座の講師、各種料理教室、執筆、企画運営など多岐にわたって活動中。最近の主な著書は「楽らく食育」、「食育講座たべるってたいせつだね」など。</p>
                   <p>ブログ：<a href="http://ameblo.jp/minnano-syokuiku">http://ameblo.jp/minnano-syokuiku</a></p>
                 </div>
@@ -150,8 +148,8 @@
             <tr id="mindmap">
               <td>
                 <h4>
-                  <span class="open"  onclick="$('#mindmap .close').show();$('#mindmap .open').hide();$('#mindmap .description').show()">&nbsp;&nbsp;&nbsp;&nbsp;ハッピー♪マインドマッピング</span>
-                  <span class="close" onclick="$('#mindmap .open').show();$('#mindmap .close').hide();$('#mindmap .description').hide()" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;ハッピー♪マインドマッピング</span>                  
+                  <span class="open"  onclick="$('#mindmap .close').show();$('#mindmap .open').hide();$('#mindmap .description').slideToggle()">&nbsp;&nbsp;&nbsp;&nbsp;ハッピー♪マインドマッピング</span>
+                  <span class="close" onclick="$('#mindmap .open').show();$('#mindmap .close').hide();$('#mindmap .description').slideToggle()" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;ハッピー♪マインドマッピング</span>
                 </h4>
                 <div class="description" style="display:none">
                   <p>マインドマップとは、脳で考えていることを視覚化するためにとても有用なツールの一つです。 従来とは異なるやり方で物事を考えたり、整理したりすることができるため、今までとは違った発見があります。</p>
@@ -162,7 +160,7 @@
               <td>
                 <h4>あきのり♀</h4>
                 <div class="description" style="display:none">
-                  <img src="images/akinori.jpg" width="40%" height="40%" />
+                  <img src="images/akinori.jpg" width="102px" height="94px" />
                   <p>３児を育てる教育系ワーキングマザー。専門は家庭科（生活に関すること全般）と性教育。“仕事（教育）に生かせるスキルの学習と実践”をテーマに学んでいます。「ワーク」のための学びを、「ライフ」でもシェアしたいとの思いから、ブログやコミュニティでの発信や、講座の企画などを細々と続けています。今回のマインドマップ講座も学びのシェアの一環です。ブログ：「<a href="http://akinorimesu.cocolog-nifty.com/blog/">ママ先生のワークライフ☆ハッピースパイラル！</a>」</p>
                 </div>
               </td>
@@ -170,9 +168,8 @@
             <tr id="worldcafe">
               <td>
                 <h4>
-                  <span class="open"  onclick="$('#worldcafe .close').show();$('#worldcafe .open').hide();$('#worldcafe .description').show()">&nbsp;&nbsp;&nbsp;&nbsp;ワールドカフェ</span>
-                  <span class="close" onclick="$('#worldcafe .open').show();$('#worldcafe .close').hide();$('#worldcafe .description').hide()" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;ワールドカフェ</span>
-                  
+                  <span class="open"  onclick="$('#worldcafe .close').show();$('#worldcafe .open').hide();$('#worldcafe .description').slideToggle()">&nbsp;&nbsp;&nbsp;&nbsp;ワールドカフェ</span>
+                  <span class="close" onclick="$('#worldcafe .open').show();$('#worldcafe .close').hide();$('#worldcafe .description').slideToggle()" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;ワールドカフェ</span>
                 </h4>
                 <div class="description" style="display:none">
                   <p>会議でもなく、雑談でもない、自由な対話の場「ワールドカフェ」をご存知ですか？様々な人と語る中で、自分も他人も認めてみましょう</p>
@@ -188,9 +185,8 @@
             <tr id="find-work">
               <td>
                 <h4>
-                  <span class="open"  onclick="$('#find-work .close').show();$('#find-work .open').hide();$('#find-work .description').show()">&nbsp;&nbsp;&nbsp;&nbsp;強み発見ワーク</span>
-                  <span class="close" onclick="$('#find-work .open').show();$('#find-work .close').hide();$('#find-work .description').hide()" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;強み発見ワーク</span>
-                  
+                  <span class="open"  onclick="$('#find-work .close').show();$('#find-work .open').hide();$('#find-work .description').slideToggle()">&nbsp;&nbsp;&nbsp;&nbsp;強み発見ワーク</span>
+                  <span class="close" onclick="$('#find-work .open').show();$('#find-work .close').hide();$('#find-work .description').slideToggle()" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;強み発見ワーク</span>
                 </h4>
                 <div class="description" style="display:none">
                   <p>『強み』ってそもそも何でしょう？？人と比較して、人よりも上手くできることなんでしょうか？？誰もが必ず持っている『強み』。『強み』を見つける方法はいろいろとありますが、今回は、キーワードが書かれているカードを使って自分がどんな強みを持っていてそれをどう活かせているときにイキイキとするのかを見つけていくワークショップです。みんな、それぞれに違った強みを持っています。いろんな方と一緒に見つめることで自分らしさをより感じていただけると思います。</p>
@@ -208,9 +204,8 @@
             <tr id="mamaiki">
               <td>
                 <h4>
-                  <span class="open"  onclick="$('#mamaiki .close').show();$('#mamaiki .open').hide();$('#mamaiki .description').show()">&nbsp;&nbsp;&nbsp;&nbsp;ママイキ・実践編</span>
-                  <span class="close" onclick="$('#mamaiki .open').show();$('#mamaiki .close').hide();$('#mamaiki .description').hide()" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;ママイキ・実践編</span>
-                  
+                  <span class="open"  onclick="$('#mamaiki .close').show();$('#mamaiki .open').hide();$('#mamaiki .description').slideToggle()">&nbsp;&nbsp;&nbsp;&nbsp;ママイキ・実践編</span>
+                  <span class="close" onclick="$('#mamaiki .open').show();$('#mamaiki .close').hide();$('#mamaiki .description').slideToggle()" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;ママイキ・実践編</span>
                 </h4>
                 <div class="description" style="display:none">
                   <p>ママイキは全５回から成り立つ講座ですがすべての回をとおして「承認」がベースにあります。私達が一番お伝えしたいところ・大切にしたいところもこの「承認」です。</p>
@@ -221,7 +216,7 @@
               <td>
                 <h4>yukkie♪こと小出ゆきこ</h4>
                 <div class="description" style="display:none">
-                  <img src="images/yukkie.jpg" width="40%" height="40%" />
+                  <img src="images/yukkie.jpg" width="102px" height="80px" />
                   <p>ママイキマスター講師として活動し、４年目を迎えました「yukkie♪」です。</p>
                   <p>これまで地元埼玉を中心に都内、千葉、栃木でママイキ講座を展開しています。単発講座や、プチママイキ（全２回）講座、ひろっしゅコーチとのコラボママイキも「一粒で２度美味しい」と大変好評で今年はコラボママイキはさいたま・宇都宮での開催、秋は柏で開催予定があります。</p>
                   <p>埼玉在住、一人息子は今年小学校３年生。ママイキ講座以外ではこころと体の繋がりを感じて観ていく女性のための講座や教室・茶話会等を展開しています。ＮＬＰプラクティショナー・Ｇボール協会インストラクターでもあります。</p>
@@ -236,9 +231,8 @@
             <tr id="flower">
               <td>
                 <h4>
-                  <span class="open"  onclick="$('#flower .close').show();$('#flower .open').hide();$('#flower .description').show()">&nbsp;&nbsp;&nbsp;&nbsp;親子フラワーアレンジ</span>
-                  <span class="close" onclick="$('#flower .open').show();$('#flower .close').hide();$('#flower .description').hide()" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;親子フラワーアレンジ</span>
-                  
+                  <span class="open"  onclick="$('#flower .close').show();$('#flower .open').hide();$('#flower .description').slideToggle()">&nbsp;&nbsp;&nbsp;&nbsp;親子フラワーアレンジ</span>
+                  <span class="close" onclick="$('#flower .open').show();$('#flower .close').hide();$('#flower .description').slideToggle()" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;親子フラワーアレンジ</span>
                 </h4>
                 <div class="description" style="display:none">
                   <p>シアワセをトッピング♪『フラワースィーツ』住設ショールーム母の日イベントで採用され、満員御礼を果たした人気アレンジ『フラワースィーツ』を、コミュニケーション・ベースバージョンでお届けします。スポンジの上に（食べられない）生クリームをホイップし、ラズベリーやプリザーブドフラワーをトッピングしたラブリーなケーキ。お子さまにも扱いやすい素材を使いますので、親子でも楽しく作っていただけます。親子でコミュニケーションを深めた一日の記念として飾っても○。メッセージを添えて『敬老の日』のサプライズプレゼントとしてもステキです。参加者にはスペシャルラッピングボックスをプレゼント！（材料費別）</p>
@@ -247,7 +241,7 @@
               <td>
                 <h4>原 みゆき</h4>
                 <div class="description" style="display:none">
-                  <img src="images/hara.jpg" width="40%" height="40%" />
+                  <img src="images/hara.jpg" width="102px" height="151px" />
                   <p><a href="http://ameblo.jp/miko-wagokoro/">ATELIER FLOREST</a>主宰。</p>
                   <p>お花関連の各種資格を有し、多面的な指導法が人気。大田区大森における定例レッスンのほか、幼稚園、生協、住設ショールームイベント講師として活躍中。
                   <p>資格：いけばな小原流師範、&gt; マミフラワーデザインスクール館林登録教室責任者、日本プリザーブドフラワー協会認定会員、カットフラワーアドバイザー。</p>
@@ -258,9 +252,8 @@
             <tr id="drawing">
               <td>
                 <h4>
-                  <span class="open"  onclick="$('#drawing .close').show();$('#drawing .open').hide();$('#drawing .description').show()">&nbsp;&nbsp;&nbsp;&nbsp;お絵かきコーチング</span>
-                  <span class="close" onclick="$('#drawing .open').show();$('#drawing .close').hide();$('#drawing .description').hide()" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;お絵かきコーチング</span>
-                  
+                  <span class="open"  onclick="$('#drawing .close').show();$('#drawing .open').hide();$('#drawing .description').slideToggle()">&nbsp;&nbsp;&nbsp;&nbsp;お絵かきコーチング</span>
+                  <span class="close" onclick="$('#drawing .open').show();$('#drawing .close').hide();$('#drawing .description').slideToggle()" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;お絵かきコーチング</span>
                 </h4>
                 <div class="description" style="display:none">
                   <p>大人から子ども、子どもから大人へとお絵かきをリレーしていきます。相手はよそのママ・パパ、よそのお子さんです。「描く」「やぶく」「ちぎる」「貼る」といった手の感覚、色や形など目の刺激によって、感受性や創造性が高まり、心はさまざまな思いを感じて、伝えはじめます。初対面のよその大人や子どもと心がつながっていくワークで、自分と相手への肯定感や受容といった“心がほわっと温かくなる感じ”“仲よしになる感じ”を実感しましょう。後半は、さらに一体感を育むコラージュ(切り貼りの絵)づくりを楽しみます。</p>
@@ -269,19 +262,18 @@
               <td>
                 <h4>大野 文子</h4>
                 <div class="description" style="display:none">
-                  <img src="images/oono.jpg" width="40%" height="40%" />
-                  <img src="images/oono-banner.gif" />
+                  <img src="images/oono.jpg" width="102px" height="132px" />
+                  <a href="http://www.real-treasure.org/" target="_blank"><img src="images/oono-banner.gif" /></a>
                   <p>NPO法人リアルトレジャー専属心理カウンセラー</p>
-                  <p>子どもたちとの関係性を取り戻し、問題解決に向かうため、言葉にのみ頼らないアート療法や現代催眠の手法を取り入れたカウンセリングを行っています。今回のお絵かきワークと同様に、パパ・ママと子どもの無意識にアプローチする<a href="http://real-treasure.org/contents/code/seminar1#oyako"> target="_blank">わくわくワ～クショップ</a>を毎月開催中。</p>
+                  <p>子どもたちとの関係性を取り戻し、問題解決に向かうため、言葉にのみ頼らないアート療法や現代催眠の手法を取り入れたカウンセリングを行っています。今回のお絵かきワークと同様に、パパ・ママと子どもの無意識にアプローチする<a href="http://real-treasure.org/contents/code/seminar1#oyako" target="_blank">わくわくワ～クショップ</a>を毎月開催中。</p>
                 </div>
               </td>
             </tr>
             <tr id="family-kitchen">
               <td>
                 <h4>
-                  <span class="open"  onclick="$('#family-kitchen .close').show();$('#family-kitchen .open').hide();$('#family-kitchen .description').show()">&nbsp;&nbsp;&nbsp;&nbsp;親子キッチン（おやつ編）</span>
-                  <span class="close" onclick="$('#family-kitchen .open').show();$('#family-kitchen .close').hide();$('#family-kitchen .description').hide()" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;親子キッチン（おやつ編）</span>
-                  
+                  <span class="open" onclick="$('#family-kitchen .close').show();$('#family-kitchen .open').hide();$('#family-kitchen .description').slideToggle()">&nbsp;&nbsp;&nbsp;&nbsp;親子キッチン（おやつ編）</span>
+                  <span class="close" onclick="$('#family-kitchen .open').show();$('#family-kitchen .close').hide();$('#family-kitchen .description').slideToggle()" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;親子キッチン（おやつ編）</span>
                 </h4>
                 <div class="description" style="display:none">
                   <p>「親子でコミュニケーションクッキング～スイーツ編～」</p>
@@ -291,7 +283,7 @@
               <td>
                 <h4>高須 希代</h4>
                 <div class="description" style="display:none">
-                  <img src="images/takasu.jpg" width="40%" height="40%" />
+                  <img src="images/takasu.jpg" width="102px" height="77px" />
                   <p>管理栄養士、食生活アドバイザー。栄養士免許取得後、心療内科クリニックに併設するセラピー研究所に入社。現代栄養学・東洋医学（漢方）・自然食（マクロビオティック）の3面から食を学ぶ。その後、有料老人ホームの栄養士を経てフリーとなり、現在は日本人にあった食生活の指導を心療内科クリニックにて行う。その他、幼児向けの料理教室、社会人向け食育講座の講師、各種料理教室、執筆、企画運営など多岐にわたって活動中。最近の主な著書は「楽らく食育」、「食育講座たべるってたいせつだね」など。</p>
                   <p>ブログ：<a href="http://ameblo.jp/minnano-syokuiku">http://ameblo.jp/minnano-syokuiku</a></p>
                 </div>
@@ -300,9 +292,8 @@
             <tr id="massage">
               <td>
                 <h4>
-                  <span class="open"  onclick="$('#massage .close').show();$('#massage .open').hide();$('#massage .description').show()">&nbsp;&nbsp;&nbsp;&nbsp;ファミリー・マッサージ</span>
-                  <span class="close" onclick="$('#massage .open').show();$('#massage .close').hide();$('#massage .description').hide()" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;ファミリー・マッサージ</span>
-                  
+                  <span class="open"  onclick="$('#massage .close').show();$('#massage .open').hide();$('#massage .description').slideToggle()">&nbsp;&nbsp;&nbsp;&nbsp;ファミリー・マッサージ</span>
+                  <span class="close" onclick="$('#massage .open').show();$('#massage .close').hide();$('#massage .description').slideToggle()" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;ファミリー・マッサージ</span>
                 </h4>
                 <div class="description" style="display:none">
                   <p>親子・ご家族で触れ合う親子マッサージ。触れ合うことでカラダとココロで感じ合い、安心感・信頼感・思いやる気持ちを感じることができます。お子さんが何歳になっても触れてあげてください。お子さんからもパパ・ママにできる簡単マッサージを教えちゃいます。親子のタッチコミュニケーションを楽しみましょう。</p>
@@ -311,6 +302,7 @@
               <td>
                 <h4>馬場 美帆</h4>
                 <div class="description" style="display:none">
+                  <img src="images/baba.jpg" width="102px" height="110px" />
                   <p>RTA認定ベビーマッサージセラピスト。</p>
                   <p>定期的にベビーマッサージ教室・ファーストサイン教室を行っています。親子カフェやカルチャーセンターでの講師経験を活かし子連れで資格が取得できるセラピスト養成スクールを開講。ママであっても自分が輝けるきっかけづくりをと、ママ向けのイベントなども開催しています。８歳の男の子と４歳の女の子のママ。</p>
                   <p>ブログ：<a href="http://ameblo.jp/jumbo2heart/">http://ameblo.jp/jumbo2heart/</a></p>
@@ -321,9 +313,8 @@
             <tr id="make-storey">
               <td>
                 <h4>
-                  <span class="open"  onclick="$('#make-storey .close').show();$('#make-storey .open').hide();$('#make-storey .description').show()">&nbsp;&nbsp;&nbsp;&nbsp;ものがたりをつくろう</span>
-                  <span class="close" onclick="$('#make-storey .open').show();$('#make-storey .close').hide();$('#make-storey .description').hide()" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;ものがたりをつくろう</span>
-                  
+                  <span class="open"  onclick="$('#make-storey .close').show();$('#make-storey .open').hide();$('#make-storey .description').slideToggle()">&nbsp;&nbsp;&nbsp;&nbsp;ものがたりをつくろう</span>
+                  <span class="close" onclick="$('#make-storey .open').show();$('#make-storey .close').hide();$('#make-storey .description').slideToggle()" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;ものがたりをつくろう</span>
                 </h4>
                 <div class="description" style="display:none">
                   <p>お絵かきから始めて、思い思いのものがたりを作り出していきます。創作のプロセスを楽しみ、周囲との発想の違いに気づきを得ましょう。</p>
