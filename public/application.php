@@ -30,37 +30,41 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <div class="eye_catch">
         <h2>受講申し込み</h2>
       </div>
-<div class="bread_crambs">
-<ol>
-<li><a href="/">トップページ</a></li>
-<li>受講申し込み</li>
-</ol>
-</div>
+      <div class="bread_crambs">
+        <ol>
+          <li><a href="/">トップページ</a></li>
+          <li>受講申し込み</li>
+        </ol>
+      </div>
     </div>
     <div id="wrapper">
       <div id="main">
         <div class="section">
-<h3>コミュニケーションベース参加の流れ</h3>
-        <p class="float_right"><img src="/images/subscription.jpg" width="300px" height="209px" /></p>
-        <p>コミュニケーションベースへの参加は以下のような流れになります。</p>
-        <p>
-          コミュニケーションベースにご参加いただくためには、受講パスポートをお申し込みください。
-          パスポート一枚で、講演会（午前）とワークショップ（午後・選択制）の両方にご参加いただけます。
-          パスポートをお持ちの大人お一人につき、お子さん二人までワークショップにご参加いただけます。（ワークショップにより年齢制限あり）
-          託児サービスのご利用は事前に予約が必要です。
-        </p>
+          <h3>コミュニケーションベース参加の流れ</h3>
+          <p class="float_right"><img src="/images/subscription.jpg" width="300px" height="209px" /></p>
+          <p>コミュニケーションベースへの参加は以下のような流れになります。</p>
+          <p>
+            コミュニケーションベースにご参加いただくためには、受講パスポートをお申し込みください。<br />
+            パスポート一枚で、講演会（午前）とワークショップ（午後・選択制）の両方にご参加いただけます。<br />
+            パスポートをお持ちの大人お一人につき、お子さん二人までワークショップにご参加いただけます。（ワークショップにより年齢制限あり）
+          </p>
+          <p>お申し込み確認後、こちらより申し込み確認ならびに入金方法をご案内いたします。</p>
+          <p>＜お支払い方法＞<br />銀行振込、郵便振替、PayPal</p>
+          <p>入金確認後、受講パスポートのpdfファイルをメールにて送付いたします。当日は、お送りしたpdf ファイルを印刷してお持ちください。
+          <p>託児サービスのご利用は事前に予約が必要です。</p>
 <!--
         </p>（図）</p>
 -->
-        <p>
-          ※ネットプリントサービス：コンビニの店頭のコピー機からパソコンのファイルのプリントアウトができるサービス。
-          いずれも、白黒２０円／枚、カラー８０円／枚</p>
-<ul>
-          <li>セブンイレブン：<a href="http://www.printing.ne.jp/index.html" target="_blank">http://www.printing.ne.jp/index.html</a></li>
-          <li>ローソン：<a href="http://www.lawson.co.jp/service/counter/copy.html" target="_blank">http://www.lawson.co.jp/service/counter/copy.html</a></li>
-</ul>
-        </p>※USBメモリやSDカード等のメディアが必要です。</p>
-</div>
+          <p>
+            ※ネットプリントサービス：コンビニの店頭のコピー機からパソコンのファイルのプリントアウトができるサービス。
+            いずれも、白黒２０円／枚、カラー８０円／枚
+          </p>
+          <ul>
+            <li>セブンイレブン：<a href="http://www.printing.ne.jp/index.html" target="_blank">http://www.printing.ne.jp/index.html</a></li>
+            <li>ローソン：<a href="http://www.lawson.co.jp/service/counter/copy.html" target="_blank">http://www.lawson.co.jp/service/counter/copy.html</a></li>
+          </ul>
+          </p>※USBメモリやSDカード等のメディアが必要です。</p>
+        </div>
 <!--
         <div class="section">
         <h3>お申し込みフォーム</h3>

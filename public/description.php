@@ -55,11 +55,11 @@
             </tr>
             <tr>
               <th rowspan="2">13:30</th>
-              <td rowspan="6"><img src="images/icon_adult.gif" alt="大人向け" width="22" height="22" />マインドマッピング</td>
+              <td rowspan="6"><img src="images/icon_adult.gif" alt="大人向け" width="22" height="22" />ハッピー♪マインドマッピング</td>
               <td rowspan="6"><img src="images/icon_adult.gif" alt="大人向け" width="22" height="22" />強み発見ワーク</td>
               <td rowspan="6"><img src="images/icon_adult.gif" alt="大人向け" width="22" height="22" />ワールドカフェ</td>
-              <td rowspan="6"><img src="images/icon_adult.gif" alt="大人向け" width="22" height="22" />ママイキ</td>
-              <td rowspan="3"><img src="images/icon_parent_kids.gif" alt="親子" width="29" height="22" />フラワーワーク</td>
+              <td rowspan="6"><img src="images/icon_adult.gif" alt="大人向け" width="22" height="22" />ママイキ・実践講座</td>
+              <td rowspan="3"><img src="images/icon_parent_kids.gif" alt="親子" width="29" height="22" />親子フラワーアレンジ</td>
               <td rowspan="6"><img src="images/icon_parent_kids.gif" alt="親子" width="29" height="22" />お話ワークショップ</td>
               <td rowspan="6"><img src="images/icon_parent_kids.gif" alt="親子" width="29" height="22" />お絵かきコーチング</td>
               <td rowspan="6"><img src="images/icon_parent_kids.gif" alt="親子" width="29" height="22" />親子キッチン</td>
@@ -83,7 +83,7 @@
           <h3>講演会</h3>
           <p>強くしなやかなハートを育むコミュニケーション</p>
           <p>あなたはお子さんを「承認」してますか？自分を「承認」してますか？自分の中にどんな価値がひそんでいるか、気づいていますか？</p>
-          <h4>講師 山崎洋</h4>
+          <h4>講師 山崎 洋実</h4>
           <div class="float_left">
             <p><img src="images/couch.jpg" width="153px" height="155" /></p>
           </div>
@@ -116,7 +116,7 @@
                 </div>
               </td>
               <td>
-                <h4>徳田 匡彦</h4>
+                <h4>徳田 匡彦と仲間たち</h4>
                 <div class="description" style="display:none">
                 </div>
               </td>
@@ -176,9 +176,12 @@
                 </div>
               </td>
               <td>
-                <h4>せた すみえ</h4>
+                <h4>瀬田 すみ恵</h4>
                 <div class="description" style="display:none">
-                  <p>プロのファシリテーターとして活動中。</p>
+                  <img src="images/seta.jpg" width="102px" height="127px" />
+                  <p>プロのファシリテーターとして活躍中。小中学生の３人の子をもつ母でもある。</p>
+                  <p>参加者自身に気づきを与え、行動の変化につなげるワークショップを行う。高度なファシリテーションスキルを持ちながらも、決してテクニカルな部分を強調せず、常に「場作り」を重視した内容で非常に腑に落ちる講座には定評がある。参加者に対するリスペクトにあふれた「ありがとう」と“笑顔”にはファンも多い。</p>
+                  <p>女性がイキイキと、そしてワクワクしながら生きることに高い関心を持ち、女性活躍推進にも注力している。</p>
                 </div>
               </td>
             </tr>
@@ -321,7 +324,7 @@
                 </div>
               </td>
               <td>
-                <h4>イイヅカ マコト</h4>
+                <h4>イダヅカ マコト</h4>
                 <div class="description" style="display:none">
                   <p><a href="http://literturehardcore.blog51.fc2.com/">http://literturehardcore.blog51.fc2.com/</a></p>
                 </div>
