@@ -62,7 +62,7 @@
 	}
 	#menu {
 	margin: 0;
-	padding-right: 10px;
+	padding-right: 0px;
 	padding-left: 20px;
 	clear: both;
 	padding-bottom: 10px;
@@ -196,6 +196,11 @@
 	padding-left: 10px;
 	font-size: 13px;
 	}
+	* html #header .eye_catch .information {
+	width: 350px;
+	height: 140px;
+	padding-left: 0px;
+	}
 	#header .eye_catch .information .data {
 	overflow: auto;
 	display: block;
@@ -312,6 +317,7 @@
 	border-bottom-width: 3px;
 	border-bottom-style: solid;
 	border-bottom-color: #E6E6E6;
+	clear: both;
 	}
 	#header div.attention p {
 		font-size: 12px;
