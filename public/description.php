@@ -58,10 +58,10 @@
               <td rowspan="6"><img src="images/icon_adult.gif" alt="大人向け" width="22" height="22" />ハッピー♪マインドマッピング</td>
               <td rowspan="6"><img src="images/icon_adult.gif" alt="大人向け" width="22" height="22" />強み発見ワーク</td>
               <td rowspan="6"><img src="images/icon_adult.gif" alt="大人向け" width="22" height="22" />ワールドカフェ</td>
-              <td rowspan="6"><img src="images/icon_adult.gif" alt="大人向け" width="22" height="22" />ママイキ・実践講座</td>
+              <td rowspan="6"><img src="images/icon_adult.gif" alt="大人向け" width="22" height="22" />「ママのイキイキ応援プログラム（通称ママイキ）」実践講座</td>
               <td rowspan="3"><img src="images/icon_parent_kids.gif" alt="親子" width="29" height="22" />親子フラワーアレンジ</td>
               <td rowspan="6"><img src="images/icon_parent_kids.gif" alt="親子" width="29" height="22" />お話ワークショップ</td>
-              <td rowspan="6"><img src="images/icon_parent_kids.gif" alt="親子" width="29" height="22" />お絵かきコーチング</td>
+              <td rowspan="6"><img src="images/icon_parent_kids.gif" alt="親子" width="29" height="22" />親子お絵かきワークショップ</td>
               <td rowspan="6"><img src="images/icon_parent_kids.gif" alt="親子" width="29" height="22" />親子キッチン</td>
             </tr>
             <tr>
@@ -198,6 +198,7 @@
               <td>
                 <h4>涼木 ゆかこ</h4>
                 <div class="description" style="display:none">
+                  <img src="images/suzuki.jpg" width="102px" height="82px" />
                   <p>子育て中でも「自分らしく輝きたい！」を応援する『*虹いろ。*』、『～本当のあなたを咲かせます～ ブロッサム*コーチング』代表。『女性の自立応援』と『子供の夢を叶える社会づくり』をコンセプトに、パーソナルコーチングやワークショップなどの個人活動と、《マネー》《キャリア》《コミュニケーション》に関するワークショップの開催、講師・教室デビューサポートなどに力を入れる。
                   <p>ブログ：<a href="http://ameblo.jp/blossom-coach/">~ 本当のあなたを咲かせます♪ ~ Blossom * coaching</a></p>
                   <p><a href="http://nijiiromaru.web.fc2.com/top.htm">「自分らしく輝きたい！」を応援します！『虹いろ。』</a></p>
@@ -207,8 +208,8 @@
             <tr id="mamaiki">
               <td>
                 <h4>
-                  <span class="open"  onclick="$('#mamaiki .close').show();$('#mamaiki .open').hide();$('#mamaiki .description').slideToggle()">&nbsp;&nbsp;&nbsp;&nbsp;ママイキ・実践編</span>
-                  <span class="close" onclick="$('#mamaiki .open').show();$('#mamaiki .close').hide();$('#mamaiki .description').slideToggle()" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;ママイキ・実践編</span>
+                  <span class="open"  onclick="$('#mamaiki .close').show();$('#mamaiki .open').hide();$('#mamaiki .description').slideToggle()">&nbsp;&nbsp;&nbsp;&nbsp;「ママのイキイキ応援プログラム（通称ママイキ）」実践講座</span>
+                  <span class="close" onclick="$('#mamaiki .open').show();$('#mamaiki .close').hide();$('#mamaiki .description').slideToggle()" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;「ママのイキイキ応援プログラム（通称ママイキ）」実践講座</span>
                 </h4>
                 <div class="description" style="display:none">
                   <p>ママイキは全５回から成り立つ講座ですがすべての回をとおして「承認」がベースにあります。私達が一番お伝えしたいところ・大切にしたいところもこの「承認」です。</p>
@@ -242,7 +243,7 @@
                 </div>
               </td>
               <td>
-                <h4>原 みゆき</h4>
+                <h4>木原 みゆき</h4>
                 <div class="description" style="display:none">
                   <img src="images/hara.jpg" width="102px" height="151px" />
                   <p><a href="http://ameblo.jp/miko-wagokoro/">ATELIER FLOREST</a>主宰。</p>
@@ -255,8 +256,8 @@
             <tr id="drawing">
               <td>
                 <h4>
-                  <span class="open"  onclick="$('#drawing .close').show();$('#drawing .open').hide();$('#drawing .description').slideToggle()">&nbsp;&nbsp;&nbsp;&nbsp;お絵かきコーチング</span>
-                  <span class="close" onclick="$('#drawing .open').show();$('#drawing .close').hide();$('#drawing .description').slideToggle()" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;お絵かきコーチング</span>
+                  <span class="open"  onclick="$('#drawing .close').show();$('#drawing .open').hide();$('#drawing .description').slideToggle()">&nbsp;&nbsp;&nbsp;&nbsp;親子お絵かきワークショップ</span>
+                  <span class="close" onclick="$('#drawing .open').show();$('#drawing .close').hide();$('#drawing .description').slideToggle()" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;親子お絵かきワークショップ</span>
                 </h4>
                 <div class="description" style="display:none">
                   <p>大人から子ども、子どもから大人へとお絵かきをリレーしていきます。相手はよそのママ・パパ、よそのお子さんです。「描く」「やぶく」「ちぎる」「貼る」といった手の感覚、色や形など目の刺激によって、感受性や創造性が高まり、心はさまざまな思いを感じて、伝えはじめます。初対面のよその大人や子どもと心がつながっていくワークで、自分と相手への肯定感や受容といった“心がほわっと温かくなる感じ”“仲よしになる感じ”を実感しましょう。後半は、さらに一体感を育むコラージュ(切り貼りの絵)づくりを楽しみます。</p>
@@ -320,13 +321,15 @@
                   <span class="close" onclick="$('#make-storey .open').show();$('#make-storey .close').hide();$('#make-storey .description').slideToggle()" style="display:none">&nbsp;&nbsp;&nbsp;&nbsp;ものがたりをつくろう</span>
                 </h4>
                 <div class="description" style="display:none">
-                  <p>お絵かきから始めて、思い思いのものがたりを作り出していきます。創作のプロセスを楽しみ、周囲との発想の違いに気づきを得ましょう。</p>
+                  <p>おりひめやひこぼしのお話をみなさん知っていますか？冬の空に大きくかがやいているオリオン座が、じつは夏の空にあるさそり座からにげまわっているというお話を知っていますか？夜空にかがやく星たちはひとつひとつお話をもっています。昔のひとたちが空をながめながら、自分たちの昔話にでてくる人たちを星座にしたのです。みなさんも昔のエジプト人やギリシャの人になったつもりで、ひとつひとつの星にお話をつけてみませんか？このワークショップでは今日のよぞらに広がる星空からみんなで星座をつくり、つくった星座からお話を作ります。</p>
+                  <p>対象：小学生以上の子どもと親、子どものみの参加もＯＫ</p>
                 </div>
               </td>
               <td>
                 <h4>イダヅカ マコト</h4>
                 <div class="description" style="display:none">
-                  <p><a href="http://literturehardcore.blog51.fc2.com/">http://literturehardcore.blog51.fc2.com/</a></p>
+                  <p>ポエムコンシェルジュ、詩人、会社員。7歳から詩を書きはじめ、21歳から詩の朗読を始める。現在も詩を書く一方、詩の朗読会や創作のワークショップの企画・運営をしている。子どもと大人が同じ目線で文章を書くことのできるワークショップ運営で好評を得ている。2010年年初からメールマガジン『ポエムコンシェルジュの選んだ一篇』を創刊し、今いきている詩人の作品を中心とした詩の紹介に努めている。アーティストの生活しやすい社会を作るために勉強会などを行っていく。</p>
+                  <p>ブログ：<a href="http://blog.livedoor.jp/poetrydesign/">ポエムコンシェルジュと探す詩と詩的デザイン</a></p>
                 </div>
               </td>
             </tr>
