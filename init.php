@@ -6,6 +6,7 @@ ini_set('include_path', join(PATH_SEPARATOR, array(
 //define('MAIL_TO',   'info@nitohen-sankakukei.com');
 //define('MAIL_FROM', 'info@nitohen-sankakukei.com');
 define('MAIL_TO',   'sankakukei@fjord.jp');
+//define('MAIL_TO',   'komagata@gmail.com');
 define('MAIL_FROM', 'info@nitohen-sankakukei.com');
 
 require_once 'util.php';
