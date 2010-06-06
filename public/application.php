@@ -2,13 +2,15 @@
 require_once '../init.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    validate_presence_of('family_workshop');
-    validate_presence_of('adult_workshop');
-    validate_numericality_of('child_num', array('less_than_or_equal_to' => 2));
     validate_presence_of('name');
     validate_presence_of('name_kana');
     validate_presence_of('email');
     validate_email_of('email');
+
+    if (!(count($_ERROR) > 0)) {
+        include 'application_confirm.php';
+        exit(0);
+    }
 }
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -41,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <div id="main">
         <div class="section">
           <h3>コミュニケーションベース参加の流れ</h3>
-          <p class="float_right"><img src="/images/subscription.jpg" width="300px" height="209px" /></p>
+          <p class="float_right"><img src="/images/subscription.jpg" width="300px" height="209px" alt="申し込み" /></p>
           <p>コミュニケーションベースへの参加は以下のような流れになります。</p>
           <p>
             コミュニケーションベースにご参加いただくためには、受講パスポートをお申し込みください。<br />
@@ -50,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           </p>
           <p>お申し込み確認後、こちらより申し込み確認ならびに入金方法をご案内いたします。</p>
           <p>＜お支払い方法＞<br />銀行振込、郵便振替、PayPal</p>
-          <p>入金確認後、受講パスポートのpdfファイルをメールにて送付いたします。当日は、お送りしたpdf ファイルを印刷してお持ちください。
+          <p>入金確認後、受講パスポートのpdfファイルをメールにて送付いたします。当日は、お送りしたpdf ファイルを印刷してお持ちください。</p>
           <p>託児サービスのご利用は事前に予約が必要です。</p>
 <!--
         </p>（図）</p>
@@ -63,41 +65,60 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <li>セブンイレブン：<a href="http://www.printing.ne.jp/index.html" target="_blank">http://www.printing.ne.jp/index.html</a></li>
             <li>ローソン：<a href="http://www.lawson.co.jp/service/counter/copy.html" target="_blank">http://www.lawson.co.jp/service/counter/copy.html</a></li>
           </ul>
-          </p>※USBメモリやSDカード等のメディアが必要です。</p>
+          <p>※USBメモリやSDカード等のメディアが必要です。</p>
         </div>
-<!--
         <div class="section">
-        <h3>お申し込みフォーム</h3>
-        <?= error_messages() ?>
-        <form action="application.php" method="post">
-          <p>
-            <label>ご希望の親子ワークショップ</label><br />
-            <?= family_workshop_select_field() ?>
-          </p>
-          <p>
-            <label>ご希望の大人ワークショップ</label><br />
-            <?= adult_workshop_select_field() ?>
-          </p>
-          <p>
-            <label>ワークショップにご参加のお子さんの人数</label><br />
-            <?= text_field('child_num', array('size' => '2')) ?> 人
-          </p>
-          <p>
-            <label>お名前</label><br />
-            <?= text_field('name') ?>
-          </p>
-          <p>
-            <label>お名前（カナ）</label><br />
-            <?= text_field('name_kana') ?>
-          </p>
-          <p>
-            <label>メールアドレス</label><br />
-            <?= text_field('email') ?>
-          </p>
-          <p><input type="submit" value="送信" /></p>
-        </form>
+          <h3>お申し込みフォーム</h3>
+          <?= error_messages() ?>
+          <form action="application.php" method="post">
+            <h4>ワークショップ</h4>
+            <p>※キッズ受講者がいない場合は[キッズ]、[親子]のワークショップに申込むことは出来ません。</p>
+            <p>
+              <label>ワークショップ（午前）</label><br />
+              <?= workshop_am_select_field() ?>
+            </p>
+            <p>
+              <label>ワークショップ（午後）</label><br />
+              <?= workshop_pm_select_field() ?>
+            </p>
+            <p>
+              <label>お名前</label><br />
+              <?= text_field('name') ?>
+            </p>
+            <p>
+              <label>お名前（カナ）</label><br />
+              <?= text_field('name_kana') ?>
+            </p>
+            <p>
+              <label>メールアドレス</label><br />
+              <?= text_field('email') ?>
+            </p>
+            <h4>キッズ受講者１（キッズ受講者が１人いる場合）</h4>
+            <p>
+              <label>学年</label><br />
+              <?= kids_class_select_field('kids_1_class') ?>
+            </p>
+            <h4>キッズ受講者２（キッズ受講者が２人いる場合）</h4>
+            <p>
+              <label>学年</label><br />
+              <?= kids_class_select_field('kids_2_class') ?>
+            </p>
+            <h4>アンケート（任意）</h4>
+            <p>
+              <label>職業</label><br />
+              <?= work_select_field() ?>
+            </p>
+            <p>
+              <label>親の年齢層</label><br />
+              <?= generation_select_field() ?>
+            </p>
+            <p>
+              <label>このイベンをどうやって知りましたか？</label><br />
+              <?= known_by_select_field() ?>
+            </p>
+            <p><input type="submit" value="送信" /></p>
+          </form>
         </div>
--->
         <div class="section">
           <h3>託児予約</h3>
           <p>6月11日予約開始</p>

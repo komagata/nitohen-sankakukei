@@ -19,39 +19,72 @@ require_once '../init.php';
       <h1><a href="/">コミュニケーション・ベース</a></h1>
 <? include 'menu.php' ?>
       <div class="eye_catch">
-        <h2>受講申し込み</h2>
+        <h2>受講申し込み（確認）</h2>
       </div>
     </div>
     <div id="wrapper">
       <div id="main">
-        <p><img src="/images/subscription" width="410px" height="306px" /></p>
-        <form action="confirm.php">
+        <div class="section">
+          <h4>ワークショプ</h4>
           <p>
-            <label>ご希望の親子ワークショップ</label><br />
-            <?= family_workshop_select_field() ?>
+            <label>ワークショップ（午前）</label><br />
+            <?= $_POST['workshop_am'] ?> 
           </p>
           <p>
-            <label>ご希望の大人ワークショップ</label><br />
-            <?= adult_workshop_select_field() ?>
+            <label>ワークショップ（午後）</label><br />
+            <?= $_POST['workshop_pm'] ?> 
           </p>
-          <p>
-            <label>ワークショップにご参加のお子さん</label><br />
-            <?= text_field('child_num', array('size' => '2')) ?> 人
-          </p>
+          <h4>受講者</h4>
           <p>
             <label>氏名</label><br />
-            <?= text_field('name') ?>
+            <?= $_POST['name'] ?> 
           </p>
           <p>
             <label>氏名（カナ）</label><br />
-            <?= text_field('name_kana') ?>
+            <?= $_POST['name_kana'] ?> 
           </p>
           <p>
             <label>メールアドレス</label><br />
-            <?= text_field('email') ?>
+            <?= $_POST['email'] ?> 
           </p>
-          <p><input type="submit" value="送信" /></p>
-        </form>
+          <h4>キッズ受講者１（キッズ受講者が１人いる場合）</h4>
+          <p>
+            <label>学年</label><br />
+            <?= $_POST['kids_1_class'] ?> 
+          </p>
+          <h4>キッズ受講者２（キッズ受講者が２人いる場合）</h4>
+          <p>
+            <label>学年</label><br />
+            <?= $_POST['kids_2_class'] ?> 
+          </p>
+          <h4>アンケート（任意）</h4>
+          <p>
+            <label>職業</label><br />
+            <?= $_POST['work'] ?> 
+          </p>
+          <p>
+            <label>親の年齢層</label><br />
+            <?= $_POST['generation'] ?> 
+          </p>
+          <p>
+            <label>このイベンをどうやって知りましたか？</label><br />
+            <?= $_POST['known_by'] ?> 
+          </p>
+          <p>
+            <form action="created.php">
+<? foreach ($_POST as $name => $value): ?>
+              <?= hidden_field($name, array('value' => $value)) ?> 
+<? endforeach ?>
+              <input type="submit" value="申込む" /></p>
+            </form>
+            <form action="application.php">
+<? foreach ($_POST as $name => $value): ?>
+              <?= hidden_field($name, array('value' => $value)) ?> 
+<? endforeach ?>
+              <input type="submit" value="戻る" />
+            </form>
+          </p>
+        </div>
         <div class="section">
           <h2>託児予約</h2>
           <p>６月１日予約開始</p>
