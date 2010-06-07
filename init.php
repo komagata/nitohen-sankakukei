@@ -9,6 +9,8 @@ define('MAIL_TO',   'sankakukei@fjord.jp');
 //define('MAIL_TO',   'komagata@gmail.com');
 define('MAIL_FROM', 'info@nitohen-sankakukei.com');
 
+$DSN = 'sqlite3:///development.sqlite3';
+
 require_once 'util.php';
 
 function i18n($name) {

@@ -85,10 +85,6 @@ require_once '../init.php';
             </form>
           </p>
         </div>
-        <div class="section">
-          <h2>託児予約</h2>
-          <p>６月１日予約開始</p>
-        </div>
       </div>
       <div id="sub">
       </div>

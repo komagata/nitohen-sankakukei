@@ -103,6 +103,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
               <label>学年</label><br />
               <?= kids_class_select_field('kids_2_class') ?>
             </p>
+            <p>
+              <label>支払い方法</label><br />
+              <?= text_field('email') ?>
+            </p>
             <h4>アンケート（任意）</h4>
             <p>
               <label>職業</label><br />
