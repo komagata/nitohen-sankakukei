@@ -5,7 +5,7 @@ CREATE TABLE workshops (
     num INT NOT NULL DEFAULT 0,
     max INT NOT NULL DEFAULT 0,
     created_at TIMESTAMP NOT NULL
-) TYPE=innodb;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE applications (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -15,8 +15,12 @@ CREATE TABLE applications (
     phone_number VARCHAR(255),
     workshop_am VARCHAR(255),
     workshop_pm VARCHAR(255),
-    kids_class_1 VARCHAR(255),
-    kids_class_2 VARCHAR(255),
+    daycare VARCHAR(255),
+    kids_1_class VARCHAR(255),
+    kids_2_class VARCHAR(255),
     payment_method VARCHAR(255) NOT NULL,
+    work VARCHAR(255),
+    generation VARCHAR(255),
+    known_by VARCHAR(255),
     created_at TIMESTAMP NOT NULL
-) TYPE=innodb;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

@@ -9,6 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' and params('submit') !== '戻る') {
     validate_presence_of('payment_method');
 
     if (!(count($_ERROR) > 0)) {
+        if (!isset($_POST['daycare'])) $_POST['daycare'] = '申し込み無し';
         include 'application_confirm.html.php';
         exit(0);
     }

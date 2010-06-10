@@ -6,9 +6,16 @@ ini_set('include_path', join(PATH_SEPARATOR, array(
 define('MAIL_TO',   'sankakukei@fjord.jp');
 //define('MAIL_TO',   'komagata@gmail.com');
 define('MAIL_FROM', 'info@nitohen-sankakukei.com');
-define('APPLICATION_MAIL_BCC', 'sankakukei-application@fjord.jp');
-define('APPLICATION_MAIL_SUBJECT', 'コミュニケーション・ベースに申し込みありがとうございます');
-define('APPLICATION_MAIL_FROM', 'info@nitohen-sankakukei.com');
+//define('APPLICATION_MAIL_BCC', 'mamatchy@mamaiki.net');
+define('APP_REPLY_MAIL_BCC', 'komagata@gmail.com');
+define('APP_REPLY_MAIL_SUBJECT', '【コミュニケーション・ベース】受講確認メール');
+define('APP_REPLY_MAIL_FROM', 'info@nitohen-sankakukei.com');
+//define('APP_MAIL_TO', 'mamatchy@mamaiki.net');
+define('APP_MAIL_TO', 'komagata@fjord.jp');
+define('APP_MAIL_BCC', 'komagata@fjord.jp');
+define('APP_MAIL_SUBJECT', 'コミュニケーション・ベースに申し込みがありました');
+define('APP_MAIL_FROM', 'info@nitohen-sankakukei.com');
+define('CAPACITY', 260);
 
 if ($DSN = @file_get_contents(dirname(__FILE__).'production.txt')) {
     $APP_ENV = 'production';
@@ -25,19 +32,26 @@ $CON->setFetchMode(DB_FETCHMODE_ASSOC);
 
 function i18n($name) {
     $_TEXT = array(
-        'workshop_am' => 'ワークショップ（午前）',
-        'workshop_pm'  => 'ワークショップ（午後）',
-        'name'            => 'お名前',
-        'name_kana'       => 'お名前（カナ）',
-        'email'           => 'メールアドレス',
-        'body'            => 'お問い合わせ内容',
-        'phone_number'    => '電話番号',
-        'kids_class_1'    => 'キッズ受講者１',
-        'kids_class_2'    => 'キッズ受講者２',
-        'payment_method'  => '支払い方法'
+        'workshop_am'    => 'ワークショップ（午前）',
+        'workshop_pm'    => 'ワークショップ（午後）',
+        'name'           => 'お名前',
+        'name_kana'      => 'お名前（カナ）',
+        'email'          => 'メールアドレス',
+        'body'           => 'お問い合わせ内容',
+        'phone_number'   => '電話番号',
+        'kids_class_1'   => 'キッズ受講者１',
+        'kids_class_2'   => 'キッズ受講者２',
+        'payment_method' => '支払い方法'
     );
     return $_TEXT[$name];
 }
+
+function is_capacity_over() {
+    global $CON;
+    $ret = (int)$CON->getOne("SELECT COUNT(id) FROM applications");
+    return $ret >= CAPACITY ? true : false;
+}
+
 function workshop_am_select_field($options = array()) {
     global $CON;
     $res = $CON->getAll("SELECT name FROM workshops WHERE ampm = 'am' AND num < max");
