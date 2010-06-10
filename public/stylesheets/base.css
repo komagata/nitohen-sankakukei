@@ -16,9 +16,8 @@
 	display: block;
 	height: 50px;
 	text-indent: -9999px;
-		background-image: url(../images/header_section.gif);
-		background-repeat: no-repeat;
-		background-position: center top;
+	background-repeat: no-repeat;
+	background-position: center top;
 	}
 	
 	h2 {
@@ -59,6 +58,12 @@
 	margin-right: auto;
 	margin-bottom: 0;
 	margin-left: auto;
+	background-image: url(../images/header.jpg);
+	background-repeat: no-repeat;
+	}
+	#index #header {
+	background-image: url(../images/header_top.jpg);
+	background-repeat: no-repeat;
 	}
 	#menu {
 	margin: 0;
@@ -98,8 +103,8 @@
 	}
 	
 	#main ul {
-	  margin: 1em 1.5em;
-	  list-style: square;
+	list-style: square;
+	padding-left: 2em;
 	}
 	
 	#footer {
@@ -144,12 +149,12 @@
 	margin-right: auto;
 	margin-bottom: 0px;
 	margin-left: auto;
-	background-image: url(../images/top_eye_catch.jpg);
 	padding-top: 10px;
 	padding-right: 0px;
 	padding-bottom: 10px;
 	padding-left: 0px;
 	clear: both;
+	background-image: none;
 	}
 	
 	#main .profile .data {
@@ -191,7 +196,7 @@
 	width: 350px;
 	height: 140px;
 	padding-top: 0px;
-	padding-right: 10px;
+	padding-right: 0px;
 	padding-bottom: 10px;
 	padding-left: 10px;
 	font-size: 13px;
@@ -307,7 +312,7 @@
 	}
 	#header div.attention {
 	color: #FFFFFF;
-	padding-right: 10px;
+	padding-right: 0px;
 	padding-left: 10px;
 	padding-top: 4px;
 	padding-bottom: 4px;
