@@ -17,7 +17,8 @@ define('APP_MAIL_SUBJECT', 'コミュニケーション・ベースに申し込�
 define('APP_MAIL_FROM', 'info@nitohen-sankakukei.com');
 define('CAPACITY', 260);
 
-if ($DSN = @file_get_contents(dirname(__FILE__).'production.txt')) {
+if ($DSN = @file_get_contents(dirname(__FILE__).'/production.txt')) {
+    $DSN = trim($DSN);
     $APP_ENV = 'production';
 } else {
     $APP_ENV = 'development';
@@ -29,6 +30,10 @@ require_once 'DB.php';
 
 $CON = DB::connect($DSN);
 $CON->setFetchMode(DB_FETCHMODE_ASSOC);
+if (PEAR::isError($CON)) {
+    trigger_error($CON->getMessage());
+}
+$CON->query("SET NAMES utf8");
 
 function i18n($name) {
     $_TEXT = array(

@@ -1,3 +1,4 @@
+SET NAMES utf8;
 INSERT INTO workshops (id, num, max, ampm, name) VALUES (1, 0, 36, 'am', '[キッズ] キッズワークショップ');
 INSERT INTO workshops (id, num, max, ampm, name) VALUES (2, 0, 40, 'am', '[キッズ] キッズキッチン（ランチ編）');
 INSERT INTO workshops (id, num, max, ampm, name) VALUES (3, 0, 30, 'pm', '[大人] ハッピー♪マインドマッピング');
