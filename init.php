@@ -3,15 +3,25 @@ ini_set('include_path', join(PATH_SEPARATOR, array(
     dirname(__FILE__).'/lib',
     ini_get('include_path'))));
 
-//define('MAIL_TO',   'info@nitohen-sankakukei.com');
-//define('MAIL_FROM', 'info@nitohen-sankakukei.com');
 define('MAIL_TO',   'sankakukei@fjord.jp');
 //define('MAIL_TO',   'komagata@gmail.com');
 define('MAIL_FROM', 'info@nitohen-sankakukei.com');
+define('APPLICATION_MAIL_BCC', 'sankakukei-application@fjord.jp');
+define('APPLICATION_MAIL_SUBJECT', 'コミュニケーション・ベースに申し込みありがとうございます');
+define('APPLICATION_MAIL_FROM', 'info@nitohen-sankakukei.com');
 
-$DSN = 'sqlite3:///development.sqlite3';
+if ($DSN = @file_get_contents(dirname(__FILE__).'production.txt')) {
+    $APP_ENV = 'production';
+} else {
+    $APP_ENV = 'development';
+    $DSN = 'mysql://root:@localhost/nitohensankakukei';
+}
 
 require_once 'util.php';
+require_once 'DB.php';
+
+$CON = DB::connect($DSN);
+$CON->setFetchMode(DB_FETCHMODE_ASSOC);
 
 function i18n($name) {
     $_TEXT = array(
@@ -24,28 +34,24 @@ function i18n($name) {
         'phone_number'    => '電話番号',
         'kids_class_1'    => 'キッズ受講者１',
         'kids_class_2'    => 'キッズ受講者２',
+        'payment_method'  => '支払い方法'
     );
     return $_TEXT[$name];
 }
 function workshop_am_select_field($options = array()) {
-    return fools_select_field('workshop_am', array(
-        '[キッズ] キッズワークショップ',
-        '[キッズ] キッズキッチン（ランチ編）'
-    ), $options);
+    global $CON;
+    $res = $CON->getAll("SELECT name FROM workshops WHERE ampm = 'am' AND num < max");
+    $names = array();
+    foreach ($res as $r) $names[] = $r['name'];
+    return fools_select_field('workshop_am', $names, $options);
 }
 
 function workshop_pm_select_field($options = array()) {
-    return fools_select_field('workshop_pm', array(
-        '[大人] ハッピー♪マインドマッピング',
-        '[大人] ワールドカフェ',
-        '[大人] 強み発見ワーク',
-        '[大人] 「ママのイキイキ応援プログラム（通称ママイキ）」実践講座',
-        '[親子] 親子フラワーアレンジ',
-        '[親子] 親子お絵かきワークショップ',
-        '[親子] 親子キッチン（おやつ編）',
-        '[親子] ファミリー・マッサージ',
-        '[親子] ものがたりをつくろう'
-    ), $options);
+    global $CON;
+    $res = $CON->getAll("SELECT name FROM workshops WHERE ampm = 'pm' AND num < max");
+    $names = array();
+    foreach ($res as $r) $names[] = $r['name'];
+    return fools_select_field('workshop_pm', $names, $options);
 }
 
 function kids_class_select_field($name, $options = array()) {

@@ -2,6 +2,10 @@
 $_ERROR = array();
 $_NOTICE = '';
 
+function params($name) {
+    return isset($_REQUEST[$name]) ? $_REQUEST[$name] : null;
+}
+
 function has_error() {
     global $_ERROR;
     return count($_ERROR) > 0 ? true : false;
@@ -95,26 +99,6 @@ function validate_email_of($name) {
     if (!preg_match('/^[^0-9][a-zA-Z0-9_-]+([.][a-zA-Z0-9_-]+)*[@][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,4}$/', $_REQUEST[$name])) {
         $_ERROR[] = i18n($name).'を正しい書式で入力してください。';
     }
-}
-
-function nice_send_mail($to, $subject, $body, $headers = array(), $log = null) {
-    mb_language("Japanese");
-    $body = mb_convert_encoding($body, 'ISO-2022-JP', 'UTF-8');
-    $subject = mb_convert_encoding($subject, 'ISO-2022-JP', 'UTF-8');
-    $subject = mb_encode_mimeheader($subject, 'ISO-2022-JP');
-
-    // header
-    if (is_array($headers)) {
-        $header = join("\r\n", $headers);
-    } else {
-        $header = '';
-    }
-
-    // log
-    if (!is_null($log)) {
-        nice_file_put_contents($log, $subject."\r\n\r\n".$body);
-    }
-    return mail($to, $subject, $body, $header);
 }
 
 function nice_file_put_contents($filename, $data, $mode = 'w') {
@@ -276,6 +260,13 @@ function select_field($name, $values = array(), $options = array()) {
     }
     $html .= '</select>';
     return $html;
+}
+
+function radio_button($name, $value, $options = array()) {
+    $v = isset($_REQUEST[$name]) ? $_REQUEST[$name] : '';
+    $p = build_attributes($options);
+    $checked = $v === $value ? ' checked="checked"' : '';
+    return "<input type=\"radio\" name=\"{$name}\" value=\"{$value}\"{$p}{$checked} />";
 }
 
 function html_options($options, $selected = null) {

@@ -577,3 +577,16 @@ table.member td {
 form {
     display: inline;
 }
+
+table.payment {
+    margin: 0 0 20px 0;
+}
+
+table.payment td {
+    font-size: 14px;
+    padding: 10px 20px 0 0;
+}
+
+table.payment td.label {
+    font-size: 14px;
+}

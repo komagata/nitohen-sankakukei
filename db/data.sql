@@ -1,0 +1,11 @@
+INSERT INTO workshops (id, num, max, ampm, name) VALUES (1, 0, 100, 'am', '[キッズ] キッズワークショップ');
+INSERT INTO workshops (id, num, max, ampm, name) VALUES (2, 0, 100, 'am', '[キッズ] キッズキッチン（ランチ編）');
+INSERT INTO workshops (id, num, max, ampm, name) VALUES (3, 0, 100, 'pm', '[大人] ハッピー♪マインドマッピング');
+INSERT INTO workshops (id, num, max, ampm, name) VALUES (4, 0, 100, 'pm', '[大人] ワールドカフェ');
+INSERT INTO workshops (id, num, max, ampm, name) VALUES (5, 0, 100, 'pm', '[大人] 強み発見ワーク');
+INSERT INTO workshops (id, num, max, ampm, name) VALUES (6, 0, 100, 'pm', '[大人] 「ママのイキイキ応援プログラム（通称ママイキ）」実践講座');
+INSERT INTO workshops (id, num, max, ampm, name) VALUES (7, 0, 100, 'pm', '[親子] 親子フラワーアレンジ');
+INSERT INTO workshops (id, num, max, ampm, name) VALUES (8, 0, 100, 'pm', '[親子] 親子お絵かきワークショップ');
+INSERT INTO workshops (id, num, max, ampm, name) VALUES (9, 0, 100, 'pm', '[親子] 親子キッチン（おやつ編）');
+INSERT INTO workshops (id, num, max, ampm, name) VALUES (10, 0, 100,'pm',  '[親子] ファミリー・マッサージ');
+INSERT INTO workshops (id, num, max, ampm, name) VALUES (11, 0, 100,'pm',  '[親子] ものがたりをつくろう');

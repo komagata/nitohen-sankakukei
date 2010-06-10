@@ -1,7 +1,3 @@
-<?php
-require_once '../init.php';
-
-?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -57,6 +53,10 @@ require_once '../init.php';
             <label>学年</label><br />
             <?= $_POST['kids_2_class'] ?> 
           </p>
+          <h4>支払い方法</h4>
+          <p>
+            <?= $_POST['payment_method'] ?> 
+          </p>
           <h4>アンケート（任意）</h4>
           <p>
             <label>職業</label><br />
@@ -71,17 +71,17 @@ require_once '../init.php';
             <?= $_POST['known_by'] ?> 
           </p>
           <p>
-            <form action="created.php">
+            <form action="application_create.php" method="post">
 <? foreach ($_POST as $name => $value): ?>
               <?= hidden_field($name, array('value' => $value)) ?> 
 <? endforeach ?>
-              <input type="submit" value="申込む" /></p>
+              <input type="submit" name="submit" value="申込む" />
             </form>
-            <form action="application.php">
+            <form action="application.php" method="post">
 <? foreach ($_POST as $name => $value): ?>
               <?= hidden_field($name, array('value' => $value)) ?> 
 <? endforeach ?>
-              <input type="submit" value="戻る" />
+              <input type="submit" name="submit" value="戻る" />
             </form>
           </p>
         </div>
