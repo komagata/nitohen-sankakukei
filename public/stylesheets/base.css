@@ -103,7 +103,8 @@
 	}
 	
 	#main ul {
-	  list-style: square;
+	list-style: square;
+	padding-left: 2em;
 	}
 	
 	#footer {
@@ -576,8 +577,4 @@ table.member td {
 }
 #main #workshop h4 .close {
 	background-image: url(../images/close.gif);
-}
-
-form {
-    display: inline;
 }
