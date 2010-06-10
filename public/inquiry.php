@@ -1,5 +1,6 @@
 <?php
 require_once '../init.php';
+require_once 'qdmail.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     validate_presence_of('email');
@@ -8,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if (!(count($_ERROR) > 0)) {
         $body = fetch('inquiry.txt.php');
-        nice_send_mail(MAIL_TO, MAIL_FROM, $body, array('From: '.MAIL_FROM));
+        qd_send_mail('text', MAIL_TO, 'コミュニケーション・ベースにお問い合わせが入りました', $body, MAIL_FROM);
         $_NOTICE = 'お問い合わせを承りました。';
     }
 }

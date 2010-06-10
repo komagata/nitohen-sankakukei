@@ -577,3 +577,7 @@ table.member td {
 #main #workshop h4 .close {
 	background-image: url(../images/close.gif);
 }
+
+form {
+    display: inline;
+}

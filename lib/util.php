@@ -2,6 +2,11 @@
 $_ERROR = array();
 $_NOTICE = '';
 
+function has_error() {
+    global $_ERROR;
+    return count($_ERROR) > 0 ? true : false;
+}
+
 function error_messages() {
     global $_ERROR;
     $count = count($_ERROR);
