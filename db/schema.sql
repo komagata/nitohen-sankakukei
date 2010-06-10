@@ -5,7 +5,7 @@ CREATE TABLE workshops (
     num INT NOT NULL DEFAULT 0,
     max INT NOT NULL DEFAULT 0,
     created_at TIMESTAMP NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) DEFAULT CHARSET=utf8;
 
 CREATE TABLE applications (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -23,4 +23,4 @@ CREATE TABLE applications (
     generation VARCHAR(255),
     known_by VARCHAR(255),
     created_at TIMESTAMP NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) DEFAULT CHARSET=utf8;
