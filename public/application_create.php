@@ -7,10 +7,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'name',
         'name_kana',
         'email',
-        'workshop_am',
-        'workshop_pm',
+        'workshop',
         'daycare',
+        'kids_1_workshop',
         'kids_1_class',
+        'kids_2_workshop',
         'kids_2_class',
         'payment_method',
         'work',
@@ -21,20 +22,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     foreach ($params as $p) $fields[$p] = params($p);
     $res = $CON->autoExecute('applications', $fields, DB_AUTOQUERY_INSERT);
 
-    // workshop_am increment
-    if (isset($_REQUEST['workshop_am'])) {
-        $CON->query(
-            "UPDATE workshops SET num = num + 1 WHERE name = ?",
-            array($_REQUEST['workshop_am'])
-        ); 
-    }
-
-    // workshop_pm increment
-    if (isset($_REQUEST['workshop_pm'])) {
-        $CON->query(
-            "UPDATE workshops SET num = num + 1 WHERE name = ?",
-            array($_REQUEST['workshop_pm'])
-        ); 
+    // workshop increment
+    $workshops = array(
+        'workshop',
+        'kids_1_workshop',
+        'kids_2_workshop'
+    );
+    foreach ($workshops as $workshop) {
+        if (isset($_REQUEST[$workshop])) {
+            $CON->query(
+                "UPDATE workshops SET num = num + 1 WHERE name = ?",
+                array($_REQUEST[$workshop])
+            );
+        }
     }
 
     // application mail

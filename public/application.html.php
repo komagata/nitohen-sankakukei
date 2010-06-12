@@ -60,14 +60,9 @@
           <?= error_messages() ?>
           <form action="application.php" method="post">
             <h4>ワークショップ</h4>
-            <p>※キッズ受講者がいない場合は[キッズ]、[親子]のワークショップに申込むことは出来ません。</p>
             <p>
-              <label>ワークショップ（午前）</label><br />
-              <?= workshop_am_select_field() ?> 
-            </p>
-            <p>
-              <label>ワークショップ（午後）</label><br />
-              <?= workshop_pm_select_field() ?> 
+              <label>ワークショップ</label><br />
+              <?= workshop_select_field() ?> 
             </p>
             <p>
               <label>お名前</label><br />
@@ -91,10 +86,18 @@
             </p>
             <h4>キッズ受講者１（キッズ受講者が１人いる場合）</h4>
             <p>
+              <label>ワークショップ</label><br />
+              <?= kids_1_workshop_select_field() ?> 
+            </p>
+            <p>
               <label>学年</label><br />
               <?= kids_class_select_field('kids_1_class') ?> 
             </p>
             <h4>キッズ受講者２（キッズ受講者が２人いる場合）</h4>
+            <p>
+              <label>ワークショップ</label><br />
+              <?= kids_2_workshop_select_field() ?> 
+            </p>
             <p>
               <label>学年</label><br />
               <?= kids_class_select_field('kids_2_class') ?> 

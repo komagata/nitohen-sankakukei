@@ -8,17 +8,20 @@
 お申し込み頂きました受講内容をご確認ください。
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 
-ワークショップ（午前）：<?= params('workshop_am') ?> 
-ワークショップ（午後）：<?= params('workshop_pm') ?> 
+ワークショップ：<?= params('workshop') ?> 
 お名前：<?= params('name') ?> 
 お名前（カナ）：<?= params('name_kana') ?> 
 メールアドレス：<?= params('email') ?> 
 託児予約の申し込み：<?= params('daycare') ?> 
-<? if (params('kids_1_class')): ?>
-キッズ受講者１：<?= params('kids_1_class') ?> 
+<? if (params('kids_1_workshop')): ?>
+キッズ受講者１：
+　ワークショップ：<?= params('kids_1_workshop') ?> 
+　学年：<?= params('kids_1_class') ?> 
 <? endif ?>
-<? if (params('kids_2_class')): ?>
-キッズ受講者２：<?= params('kids_2_class') ?> 
+<? if (params('kids_2_workshop')): ?>
+キッズ受講者２：
+　ワークショップ：<?= params('kids_2_workshop') ?> 
+　学年：<?= params('kids_2_class') ?> 
 <? endif ?>
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿

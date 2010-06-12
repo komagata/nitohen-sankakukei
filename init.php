@@ -46,7 +46,10 @@ function i18n($name) {
         'phone_number'   => '電話番号',
         'kids_class_1'   => 'キッズ受講者１',
         'kids_class_2'   => 'キッズ受講者２',
-        'payment_method' => '支払い方法'
+        'payment_method' => '支払い方法',
+        'work'           => '職業',
+        'generation'     => '親の年齢層',
+        'known_by'       => 'このイベントをどうやって知りましたか？'
     );
     return $_TEXT[$name];
 }
@@ -57,20 +60,29 @@ function is_capacity_over() {
     return $ret >= CAPACITY ? true : false;
 }
 
-function workshop_am_select_field($options = array()) {
+function workshop_select_field($options = array()) {
     global $CON;
-    $res = $CON->getAll("SELECT name FROM workshops WHERE ampm = 'am' AND num < max");
+    $res = $CON->getAll("SELECT name FROM workshops WHERE target IN ('adult', 'family') AND num < max");
     $names = array();
     foreach ($res as $r) $names[] = $r['name'];
-    return fools_select_field('workshop_am', $names, $options);
+    return fools_select_field('workshop', $names, $options);
 }
 
-function workshop_pm_select_field($options = array()) {
+function kids_1_workshop_select_field($options = array()) {
+    return kids_workshop_select_field('kids_1_workshop', $options);
+}
+
+function kids_2_workshop_select_field($options = array()) {
+    return kids_workshop_select_field('kids_2_workshop', $options);
+}
+
+// private
+function kids_workshop_select_field($name, $options = array()) {
     global $CON;
-    $res = $CON->getAll("SELECT name FROM workshops WHERE ampm = 'pm' AND num < max");
+    $res = $CON->getAll("SELECT name FROM workshops WHERE target IN ('kids', 'family') AND num < max");
     $names = array();
     foreach ($res as $r) $names[] = $r['name'];
-    return fools_select_field('workshop_pm', $names, $options);
+    return fools_select_field($name, $names, $options);
 }
 
 function kids_class_select_field($name, $options = array()) {

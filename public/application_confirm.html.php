@@ -23,12 +23,8 @@
         <div class="section">
           <h4>ワークショプ</h4>
           <p>
-            <label>ワークショップ（午前）</label><br />
-            <?= $_POST['workshop_am'] ?> 
-          </p>
-          <p>
-            <label>ワークショップ（午後）</label><br />
-            <?= $_POST['workshop_pm'] ?> 
+            <label>ワークショップ</label><br />
+            <?= $_POST['workshop'] ?> 
           </p>
           <h4>受講者</h4>
           <p>
@@ -49,10 +45,18 @@
           </p>
           <h4>キッズ受講者１（キッズ受講者が１人いる場合）</h4>
           <p>
+            <label>ワークショップ</label><br />
+            <?= $_POST['kids_1_workshop'] ?> 
+          </p>
+          <p>
             <label>学年</label><br />
             <?= $_POST['kids_1_class'] ?> 
           </p>
           <h4>キッズ受講者２（キッズ受講者が２人いる場合）</h4>
+          <p>
+            <label>ワークショップ</label><br />
+            <?= $_POST['kids_2_workshop'] ?> 
+          </p>
           <p>
             <label>学年</label><br />
             <?= $_POST['kids_2_class'] ?> 

@@ -3,8 +3,7 @@
 ワークショップ
 ==============
 
-ワークショップ（午前）：<?= params('workshop_am') ?> 
-ワークショップ（午後）：<?= params('workshop_pm') ?> 
+ワークショップ（午前）：<?= params('workshop') ?> 
 お名前：<?= params('name') ?> 
 お名前（カナ）：<?= params('name_kana') ?> 
 メールアドレス：<?= params('email') ?> 
@@ -17,11 +16,13 @@
 キッズ受講者１
 ==============
 
+ワークショップ：<?= params('kids_1_workshop') ?> 
 学年：<?= params('kids_1_class') ?> 
 
 キッズ受講者２
 ==============
 
+ワークショップ：<?= params('kids_2_workshop') ?> 
 学年：<?= params('kids_2_class') ?> 
 
 支払い方法
