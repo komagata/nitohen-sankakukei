@@ -6,7 +6,7 @@ ini_set('include_path', join(PATH_SEPARATOR, array(
 define('MAIL_TO',   'sankakukei@fjord.jp');
 //define('MAIL_TO',   'komagata@gmail.com');
 define('MAIL_FROM', 'info@nitohen-sankakukei.com');
-//define('APPLICATION_MAIL_BCC', 'mamatchy@mamaiki.net');
+//define('APP_REPLY_MAIL_BCC', 'mamatchy@mamaiki.net');
 define('APP_REPLY_MAIL_BCC', 'komagata@gmail.com');
 define('APP_REPLY_MAIL_SUBJECT', '【コミュニケーション・ベース】受講確認メール');
 define('APP_REPLY_MAIL_FROM', 'info@nitohen-sankakukei.com');
