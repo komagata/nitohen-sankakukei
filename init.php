@@ -3,26 +3,31 @@ ini_set('include_path', join(PATH_SEPARATOR, array(
     dirname(__FILE__).'/lib',
     ini_get('include_path'))));
 
-define('MAIL_TO',   'sankakukei@fjord.jp');
-//define('MAIL_TO',   'komagata@gmail.com');
 define('MAIL_FROM', 'info@nitohen-sankakukei.com');
-//define('APP_REPLY_MAIL_BCC', 'mamatchy@mamaiki.net');
-define('APP_REPLY_MAIL_BCC', 'komagata@gmail.com');
 define('APP_REPLY_MAIL_SUBJECT', '【コミュニケーション・ベース】受講確認メール');
 define('APP_REPLY_MAIL_FROM', 'info@nitohen-sankakukei.com');
-//define('APP_MAIL_TO', 'mamatchy@mamaiki.net');
-define('APP_MAIL_TO', 'komagata@fjord.jp');
 define('APP_MAIL_BCC', 'komagata@fjord.jp');
-define('APP_MAIL_SUBJECT', 'コミュニケーション・ベースに申し込みがありました');
+define('APP_MAIL_SUBJECT', '【コミュニケーション・ベース】申し込みがありました');
 define('APP_MAIL_FROM', 'info@nitohen-sankakukei.com');
 define('CAPACITY', 260);
 
+// production
 if ($DSN = @file_get_contents(dirname(__FILE__).'/production.txt')) {
     $DSN = trim($DSN);
     $APP_ENV = 'production';
+
+    define('MAIL_TO',   'sankakukei@fjord.jp');
+    define('APP_REPLY_MAIL_BCC', 'mamatchy@mamaiki.net');
+    define('APP_MAIL_TO', 'mamatchy@mamaiki.net');
+
+// development
 } else {
-    $APP_ENV = 'development';
     $DSN = 'mysql://root:@localhost/nitohensankakukei';
+    $APP_ENV = 'development';
+
+    define('MAIL_TO',   'komagata@gmail.com');
+    define('APP_REPLY_MAIL_BCC', 'komagata@gmail.com');
+    define('APP_MAIL_TO', 'komagata@fjord.jp');
 }
 
 require_once 'util.php';
