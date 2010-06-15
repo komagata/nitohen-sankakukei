@@ -9,9 +9,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'email',
         'workshop',
         'daycare',
-        'kids_1_workshop',
+        'kids_1_workshop_am',
+        'kids_1_workshop_pm',
         'kids_1_class',
-        'kids_2_workshop',
+        'kids_2_workshop_am',
+        'kids_2_workshop_pm',
         'kids_2_class',
         'payment_method',
         'work',
@@ -25,8 +27,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // workshop increment
     $workshops = array(
         'workshop',
-        'kids_1_workshop',
-        'kids_2_workshop'
+        'kids_1_workshop_am',
+        'kids_1_workshop_pm',
+        'kids_2_workshop_am',
+        'kids_2_workshop_pm'
     );
     foreach ($workshops as $workshop) {
         if (isset($_REQUEST[$workshop])) {

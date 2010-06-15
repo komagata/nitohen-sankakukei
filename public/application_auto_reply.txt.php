@@ -17,15 +17,17 @@
 ※保育のお申し込みは、お申し込みページ下部
 をご参照の上、別にメールでお願いいたします。追ってご連絡を差し上げます。
 <? endif ?>
-<? if (params('kids_1_workshop')): ?>
+<? if (params('kids_1_workshop_am') or params('kids_1_workshop_pm')): ?>
 キッズ受講者１：
-　ワークショップ：<?= params('kids_1_workshop') ?> 
-　学年：<?= params('kids_1_class') ?> 
+ * ワークショップ（午前）：<?= params('kids_1_workshop_am') ?> 
+ * ワークショップ（午後）：<?= params('kids_1_workshop_pm') ?> 
+ * 学年：<?= params('kids_1_class') ?> 
 <? endif ?>
-<? if (params('kids_2_workshop')): ?>
+<? if (params('kids_2_workshop_am') or params('kids_2_workshop_pm')): ?>
 キッズ受講者２：
-　ワークショップ：<?= params('kids_2_workshop') ?> 
-　学年：<?= params('kids_2_class') ?> 
+ * ワークショップ（午前）：<?= params('kids_2_workshop_am') ?> 
+ * ワークショップ（午後）：<?= params('kids_2_workshop_pm') ?> 
+ * 学年：<?= params('kids_2_class') ?> 
 <? endif ?>
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿

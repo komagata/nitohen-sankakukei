@@ -19,7 +19,8 @@
           <h3>お知らせ</h3>
           <div class="data">
             <ul>
-              <li>6月11日:申し込み受付け開始</li>
+              <li>6月14日:<a href="http://ameblo.jp/cm-base/entry-10563031168.html">【FAQ】連絡がうまくとれないときは？</a></li>
+              <li>6月11日:申し込み受付け開始！</li>
               <li>5月8日:サイトオープン！</li>
             </ul>
           </div>
@@ -27,7 +28,7 @@
       </div>
 <? include 'menu.php' ?>
         <div class="attention">
-          <p>6月11日から受講申し込み開始しました。</p>
+          <p>受講申し込み受け付け中。</p>
         </div>
     </div>
     <div id="wrapper">

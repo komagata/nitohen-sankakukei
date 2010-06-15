@@ -67,24 +67,15 @@ function is_capacity_over() {
 
 function workshop_select_field($options = array()) {
     global $CON;
-    $res = $CON->getAll("SELECT name FROM workshops WHERE target IN ('adult', 'family') AND num < max");
+    $res = $CON->getAll("SELECT name FROM workshops WHERE target IN ('adult', 'family') AND ampm = 'pm' AND num < max");
     $names = array();
     foreach ($res as $r) $names[] = $r['name'];
     return fools_select_field('workshop', $names, $options);
 }
 
-function kids_1_workshop_select_field($options = array()) {
-    return kids_workshop_select_field('kids_1_workshop', $options);
-}
-
-function kids_2_workshop_select_field($options = array()) {
-    return kids_workshop_select_field('kids_2_workshop', $options);
-}
-
-// private
-function kids_workshop_select_field($name, $options = array()) {
+function kids_workshop_select_field($name, $ampm = 'am', $options = array()) {
     global $CON;
-    $res = $CON->getAll("SELECT name FROM workshops WHERE target IN ('kids', 'family') AND num < max");
+    $res = $CON->getAll("SELECT name FROM workshops WHERE target IN ('kids', 'family') AND ampm = '{$ampm}' AND num < max");
     $names = array();
     foreach ($res as $r) $names[] = $r['name'];
     return fools_select_field($name, $names, $options);

@@ -45,8 +45,12 @@
           </p>
           <h4>キッズ受講者１（キッズ受講者が１人いる場合）</h4>
           <p>
-            <label>ワークショップ</label><br />
-            <?= $_POST['kids_1_workshop'] ?> 
+            <label>ワークショップ（午前）</label><br />
+            <?= $_POST['kids_1_workshop_am'] ?> 
+          </p>
+          <p>
+            <label>ワークショップ（午後）</label><br />
+            <?= $_POST['kids_1_workshop_pm'] ?> 
           </p>
           <p>
             <label>学年</label><br />
@@ -54,8 +58,12 @@
           </p>
           <h4>キッズ受講者２（キッズ受講者が２人いる場合）</h4>
           <p>
-            <label>ワークショップ</label><br />
-            <?= $_POST['kids_2_workshop'] ?> 
+            <label>ワークショップ（午前）</label><br />
+            <?= $_POST['kids_2_workshop_am'] ?> 
+          </p>
+          <p>
+            <label>ワークショップ（午後）</label><br />
+            <?= $_POST['kids_2_workshop_pm'] ?> 
           </p>
           <p>
             <label>学年</label><br />
