@@ -96,7 +96,7 @@ function validate_numericality_of($name, $options = array()) {
 
 function validate_email_of($name) {
     global $_ERROR;
-    if (!preg_match('/^[^0-9][a-zA-Z0-9_-]+([.][a-zA-Z0-9_-]+)*[@][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,4}$/', $_REQUEST[$name])) {
+    if (!preg_match('/^[a-zA-Z0-9_-]+([.][a-zA-Z0-9_-]+)*[@][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,4}$/', $_REQUEST[$name])) {
         $_ERROR[] = i18n($name).'を正しい書式で入力してください。';
     }
 }
