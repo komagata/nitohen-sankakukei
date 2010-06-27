@@ -1,3 +1,6 @@
+<?php
+require_once '../init.php';
+?>
     <div id="footer">コミュニケーション・ベース実行委員会</div>
 <? if ($APP_ENV == 'production'): ?>
 <script type="text/javascript">
