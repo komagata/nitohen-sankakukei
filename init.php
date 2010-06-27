@@ -22,7 +22,7 @@ if ($DSN = @file_get_contents(dirname(__FILE__).'/production.txt')) {
 
 // development
 } else {
-    $DSN = 'mysql://root:@localhost/nitohensankakukei';
+    $DSN = 'mysql://root:@localhost/sankakukei';
     $APP_ENV = 'development';
 
     define('MAIL_TO',   'komagata@gmail.com');
@@ -34,10 +34,11 @@ require_once 'util.php';
 require_once 'DB.php';
 
 $CON = DB::connect($DSN);
-$CON->setFetchMode(DB_FETCHMODE_ASSOC);
 if (PEAR::isError($CON)) {
+    print_r($CON);
     trigger_error($CON->getMessage());
 }
+$CON->setFetchMode(DB_FETCHMODE_ASSOC);
 $CON->query("SET NAMES utf8");
 
 function i18n($name) {
@@ -79,6 +80,14 @@ function kids_workshop_select_field($name, $ampm = 'am', $options = array()) {
     $names = array();
     foreach ($res as $r) $names[] = $r['name'];
     return fools_select_field($name, $names, $options);
+}
+
+function workshops_for_family() {
+    global $CON;
+    $res = $CON->getAll("SELECT name FROM workshops WHERE target = 'family'");
+    $names = array();
+    foreach ($res as $r) $names[] = $r['name'];
+    return $names;
 }
 
 function kids_class_select_field($name, $options = array()) {

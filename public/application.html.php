@@ -86,7 +86,7 @@
             </p>
             <h4>キッズ受講者１（キッズ受講者が１人いる場合）</h4>
             <p>
-              <label>ワークショップ（午前）</label><br />
+              <label>ワークショップ（午前）（小学生以上対象）</label><span><br />
               <?= kids_workshop_select_field('kids_1_workshop_am', 'am') ?> 
             </p>
             <p>
@@ -99,7 +99,7 @@
             </p>
             <h4>キッズ受講者２（キッズ受講者が２人いる場合）</h4>
             <p>
-              <label>ワークショップ（午前）</label><br />
+              <label>ワークショップ（午前）（小学生以上対象）</label><br />
               <?= kids_workshop_select_field('kids_2_workshop_am', 'am') ?> 
             </p>
             <p>
