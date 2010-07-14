@@ -9,7 +9,7 @@ define('APP_REPLY_MAIL_FROM', 'info@nitohen-sankakukei.com');
 define('APP_MAIL_BCC', 'komagata@fjord.jp');
 define('APP_MAIL_SUBJECT', '【コミュニケーション・ベース】申し込みがありました');
 define('APP_MAIL_FROM', 'info@nitohen-sankakukei.com');
-define('CAPACITY', 260);
+define('CAPACITY', 300);
 
 // production
 if ($DSN = @file_get_contents(dirname(__FILE__).'/production.txt')) {
@@ -68,7 +68,7 @@ function is_capacity_over() {
 
 function workshop_select_field($options = array()) {
     global $CON;
-    $res = $CON->getAll("SELECT name FROM workshops WHERE target IN ('adult', 'family') AND ampm = 'pm' AND num < max");
+    $res = $CON->getAll("SELECT name FROM workshops WHERE target IN ('adult', 'family') AND ampm = 'pm'");
     $names = array();
     foreach ($res as $r) $names[] = $r['name'];
     return fools_select_field('workshop', $names, $options);
@@ -76,7 +76,7 @@ function workshop_select_field($options = array()) {
 
 function kids_workshop_select_field($name, $ampm = 'am', $options = array()) {
     global $CON;
-    $res = $CON->getAll("SELECT name FROM workshops WHERE target IN ('kids', 'family') AND ampm = '{$ampm}' AND num < max");
+    $res = $CON->getAll("SELECT name FROM workshops WHERE target IN ('kids', 'family') AND ampm = '{$ampm}'");
     $names = array();
     foreach ($res as $r) $names[] = $r['name'];
     return fools_select_field($name, $names, $options);
